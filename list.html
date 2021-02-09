@@ -14,30 +14,18 @@
         content="no-cache"/>
         <meta http-equiv="Content-Type" 
         content="text/html; charset=UTF-8"/>
-        <!--Internal stylesheet-->
-        <style>
-          body   {
-                  background-color: rgba(255, 114, 63, 0.75); 
-                  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-                  font-weight:bolder; font-stretch: expanded; }
-          ol> li {
-                  text-transform: capitalize;
-                  background-color:rgba(255, 241, 41, 0.75);
-                  padding: 3px; margin: 0px;}
-          h2     {
-                  text-transform: uppercase;
-                  background-color:rgba(255, 124, 1, 0.95);
-                  padding: 8px;  margin: 0px;
-                  font-size: xx-large; text-decoration: underline;}
-        </style>
+        <!--External stylesheet-->
+
+        <link reln="stylesheet" href="style.css">
+        
     <body>
         <!--Displays Date-->
         <script>
             let d = new Date();
-            document.body.innerHTML = "<h3>Current Time: " + d.getHours() + ":" + d.getMinutes() + ":" + d.getSeconds() 
+            document.body.innerHTML = "<h3>Current Time: " + d.getHours() + ":" + d.getMinutes() + ":" + d.getSeconds();
              "</h3>"
         </script>
-        <ol type="1">
+        <ol id="Anilist" type="1">
             <!--The list with heading(centered)-->
             <center><h2><b>Anime&nbsp;List</b></h2><hr></center>
             <li><b>Blue Exorcist</b>--<em>Ao no Exorcist</em></li>
@@ -140,7 +128,7 @@
             <li><em>Ballroom e youkoushou</em></li>
             <li><b>King's Game</b></li>
             <li><b>Code:Breaker</b></li>
-            <li><b>Tower og god</b>--<em>Kami no tou</em></li>
+            <li><b>Tower of god</b>--<em>Kami no tou</em></li>
             <li><b>Strike the blood</b></li>
             <li><b>K:</b><sub>[03]</sub></li>
             <li><b>Gleipnir</b></li>
@@ -164,7 +152,11 @@
             <li><em>Jujutsu Kaisen</em></li>
             <li><em>Dororo</em></li>
             <li><em>Toradora</em></li>
-            
+            <li><em>Hamatora:The Animation</em></li>
+            <li><em>Nurarihyoun no mago</em></li>
+            <li><b>Magi:Adventures of Sinbad</b>--<em>Sinbad no bouken</em></li>
+            <li><b>Magi:The Labyrinth of Magic</b></li>
+            <li><b>Is it wrong to try to pick up girls in the dungeon?</b>--<em>Danmachi</em></li>
         </ol>
     </body>
 </html>
