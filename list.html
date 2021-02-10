@@ -1,7 +1,8 @@
 <!DOCTYPE html>
 <html dir="ltr", lang="en">
     <head>
-        <title>Anime_list</title></head>
+        <title>Anime_list</title>
+
         <!--The meta data about the page-->
         <meta name="description"
          content="My Anime list" />
@@ -14,20 +15,49 @@
         content="no-cache"/>
         <meta http-equiv="Content-Type" 
         content="text/html; charset=UTF-8"/>
-        <!--External stylesheet-->
+        <!-- 
+             
 
-        <link reln="stylesheet" href="style.css">
-        
+        -->
+        <!--Internal stylesheet-->
+        <style>
+            *   { 
+                  margin-left: 10px; margin-right: 10px;
+                  padding: 5px; }
+          body  { 
+                  background-image: url("c3dbcd526649dd632130d310ff499ba4.jpg");
+                  background-position: absolute;  background-repeat: no-repeat;
+                  background-size: cover;
+                  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+                  font-weight: bolder; font-stretch: expanded;}
+          ol     {        
+                  margin-left: 20px;}
+          ol> li {
+                  text-transform: capitalize;}
+          h1    {
+                  background-color:rgba(74, 74, 124, 0.750);
+                  text-transform: uppercase;
+                  font-size: xx-large; text-decoration: underline; 
+                  margin-top: 0px; margin-bottom: 0px;
+                  padding: 10px;}
+         #new    {
+                  list-style-position: outside;
+                  background-color: rgba(193, 255, 255, 0.624); }       
+            a    {
+                  color:rgba(46, 46, 157, 0.898);
+                  text-decoration: none;   }
+        </style>
+    </head>        
     <body>
         <!--Displays Date-->
-        <script>
+        <script type="text/javascript">
             let d = new Date();
             document.body.innerHTML = "<h3>Current Time: " + d.getHours() + ":" + d.getMinutes() + ":" + d.getSeconds();
              "</h3>"
         </script>
+         <center><h1><b>Anime&nbsp;List</b></h1><hr></center>
+        <!--The list-->
         <ol id="Anilist" type="1">
-            <!--The list with heading(centered)-->
-            <center><h2><b>Anime&nbsp;List</b></h2><hr></center>
             <li><b>Blue Exorcist</b>--<em>Ao no Exorcist</em></li>
             <li><b>Assassination Classroom</b>--<em>Ansatsu no kyoushitsu</em></li>
             <li><b>Akame ga kill</b></li>
@@ -158,5 +188,20 @@
             <li><b>Magi:The Labyrinth of Magic</b></li>
             <li><b>Is it wrong to try to pick up girls in the dungeon?</b>--<em>Danmachi</em></li>
         </ol>
+        <hr/>
+        <fieldset id="new">
+          <legend>Updates</legend>
+            <label> 
+                Anime: <br/><input name="Anime name" type="text"
+                 placeholder="Enter anime name"  maxlength="80" size="60" /> 
+                </label><br/>
+            <label>
+                Alternate name: <br/><input name="Alt name" type="text"
+                 placeholder="Enter alternate name" maxlength="80" size="60"/>
+                </label><br/>
+            <label>
+                <button type="submit" value="submit">Submit</button>
+            </label>
+        </fieldset>
     </body>
 </html>
