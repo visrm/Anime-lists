@@ -69,16 +69,13 @@
 
     <center>
         <h1><b>Anime&nbsp;List</b></h1>
-        <hr>
+        <hr />
     </center>
 
-    <script type="text/javascript">
-        var Animelist = document.getElementById(Anilist);
-
-    </script>
+    <script type="text/javascript" src="list.js"></script>
     <div>
-    <input type="radio" name="order" value="Descending"/>A-Z
-    <input type="radio" name="order" value="Ascending"/>Z-A
+        <input type="radio" name="order" value="Descending" />A-Z
+        <input type="radio" name="order" value="Ascending" />Z-A
     </div>
     <!--The list-->
     <ol id="Anilist" type="1">
@@ -231,22 +228,6 @@
             <button name="removeitem" type="submit" value="submit" id="Remove" onclick="removeitem();">Remove
             </button>
         </label>
-        <script type="text/javascript">
-            function additem() {
-                var ol = document.getElementById("Anilist");
-                var Anime = document.getElementById("Anime");
-                var li = document.createElement("li");
-                li.setAttribute('id', Anime.value);
-                li.appendChild(document.createTextNode(Anime.value));
-                ol.appendChild(li);
-            }
-            function removeitem() {
-                var ol = document.getElementById("Anilist");
-                var Anime = document.getElementById("Anime");
-                var item = document.getElementById(Anime.value);
-                ol.removeChild(item);
-            }
-        </script>
     </fieldset>
 </body>
 
