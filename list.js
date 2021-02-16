@@ -1,10 +1,10 @@
-function sortList() {
+/*function sortList() {
     var list, i, switching, b, shouldSwitch;
     list = document.getElementById("Anilist");
-    /* make loop that will continue
+     make loop that will continue
      until
       no switching occurs: */
-    while (switching) {
+  /*  while (switching) {
         switching = false;
         b = list.getElementsByTagName("li");
         for (i = 0; i < (b.length - 1); i++) {
@@ -19,4 +19,4 @@ function sortList() {
             switching = true;
         }
     }
-};
+};*/

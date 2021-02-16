@@ -13,28 +13,14 @@
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
     <!--Internal stylesheet-->
     <style>
-        * {
-            margin-left: 10px;
-            margin-right: 10px;
-            padding: 5px;
-        }
-
         body {
-            background-image: url("bg.jpg");
+            background-image: url("list-bg\(Default\).jpg");
             background-position: absolute;
             background-repeat: no-repeat;
             background-size: cover;
             font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
             font-weight: bolder;
             font-stretch: expanded;
-        }
-
-        ol {
-            margin-left: 20px;
-        }
-
-        ol>li {
-            text-transform: capitalize;
         }
 
         h1 {
@@ -47,23 +33,42 @@
             padding: 10px;
         }
 
-        #new {
-            list-style-position: outside;
-            background-color: rgba(193, 255, 255, 0.624);
+        ul {
+            margin-left: 20px;
         }
 
         li.anilist {
+            text-transform: capitalize;
             padding: 3px;
-            margin-top: 2px;
-            margin-bottom: 2px;
+            margin-top: 3px;
+            margin-bottom: 3px;
             font-size: xx-large;
             font-weight:700;
         }
 
-        a {
-            color: rgba(46, 46, 157, 0.898);
-            text-decoration: none;
+        #new {
+            font-size: 48px;
+            font-stretch: expanded;
+            font-weight: 900;
+            margin-bottom: 1px;
+            margin-top: 1px;
+            list-style-position: outside;
+            color:rgb(11, 11, 80);
         }
+       
+       .inp {
+            height: 48px;
+            width: 1750px;
+            font-size: x-large;   
+            font-stretch: extra-expanded;
+       }
+
+       .Bt {
+            height: 36px;
+            width: 500px;
+            font-size: x-large;
+        }
+
     </style>
 </head>
 
@@ -345,13 +350,14 @@
         <legend>Updates</legend>
         <label>
             Anime: <br /><input name="Anime name" type="text" placeholder="Enter anime name" id="Anime" maxlength="80"
-                size="60" />
+                size="60" class="inp"/>
         </label><br />
         <label>
             Alternate name: <br /><input name="Alt name" type="text" placeholder="Enter alternate name" id="alt"
-                maxlength="70" size="60" />
+                maxlength="70" size="60" class="inp" />
         </label><br />
+        <button type="button" name="Additem" value="Added" class="Bt" >Insert</button> 
+        <button type="button" name="Removeitem" value="Removed" class="Bt">Remove</button>
     </fieldset>
 </body>
-
 </html>
