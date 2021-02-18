@@ -94,8 +94,6 @@
         <hr />
     </center>
     <!--ol type="1"-->
-    <script type="text/javascript" src="list.js"></script>
-
     <!--The list-->
     <ul id="Anilist" type="square">
         <li class="anilist" id="0-9">0-9
@@ -358,16 +356,17 @@
     <fieldset id="new">
         <legend>Updates</legend>
         <label>
-            Anime: <br /><input name="Anime name" type="text" placeholder="Enter  anime  name" id="Anime" maxlength="80"
+            Anime name: <br /><input name="Anime_name" type="text" placeholder="Enter  anime  name" id="Anime" maxlength="80"
                 size="60" class="inp" />
         </label><br />
         <label>
-            Alternate name: <br /><input name="Alt name" type="text" placeholder="Enter  alternate  name" id="alt"
+            Alternate name: <br /><input name="Alt_name" type="text" placeholder="Enter  alternate  name" id="Alt"
                 maxlength="70" size="60" class="inp" />
         </label><br />
-        <button type="button" name="Insertitem" value="Inserted" class="Bt" id="insli">Insert</button>
+        <button type="button" name="Insertitem" value="Inserted" class="Bt" id="insli" onClick="ins(Anime, alt = null);">Insert</button>
         <button type="button" name="Removeitem" value="Removed" class="Bt" id="remli">Remove</button>
     </fieldset>
+    <script type="text/javascript" src="list.js"></script>
 </body>
 
 </html>

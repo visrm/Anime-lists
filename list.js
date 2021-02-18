@@ -1,30 +1,38 @@
 /*function sortList() {
     var list, i, switching, b, shouldSwitch;
     list = document.getElementById("Anilist");*/
-    /*  make loop that will continue
-     until
-      no switching occurs: */
-   /* while (switching) {
-        switching = false;
-        b = list.getElementsByTagName("li");
-        for (i = 0; i < (b.length - 1); i++) {
-            shouldSwitch = false;
-            if (b[i].innerHTML.toLowerCase() > b[i + 1].innerHTML.toLowerCase()) {
-                shouldSwitch = true;
-                break;
-            }
-        }
-        if (shouldSwitch) {
-            b[i].parentNode.insertBefore(b[i + 1], b[i]);
-            switching = true;
-        }
-    }
+/*  make loop that will continue
+ until
+  no switching occurs: */
+/* while (switching) {
+     switching = false;
+     b = list.getElementsByTagName("li");
+     for (i = 0; i < (b.length - 1); i++) {
+         shouldSwitch = false;
+         if (b[i].innerHTML.toLowerCase() > b[i + 1].innerHTML.toLowerCase()) {
+             shouldSwitch = true;
+             break;
+         }
+     }
+     if (shouldSwitch) {
+         b[i].parentNode.insertBefore(b[i + 1], b[i]);
+         switching = true;
+     }
+ }
 };*/
-const insert = Insli(Anime, alt = null);
-const remove = Remli(Anime, alt = null);
-function add(Anime, alt = null) {
-    if (Anime[0] == 'A') {
+let anilist = document.getElementsByClassName('anilist');
 
+function ins(Anime, alt = null) {
+    // New created bold and italised list elements
+    createdElementBl = document.createElement('b');
+    createdElementEm = document.createElement('em');
+
+    if (Anime[0] == 'A') {
+        createdElementBl.innerText(Anime);
+        createdElementEm.innerText(alt);
+        createdElement = createdElementBl + "--" + createdElementEm;
+        anilist.appendChild(createdElement);
+        console.log('A is inserted');
     }
     else if (Anime[0] == 'B') {
 
