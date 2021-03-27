@@ -1,115 +1,60 @@
-/*function sortList() {
-    var list, i, switching, b, shouldSwitch;
-    list = document.getElementById("Anilist");*/
-/*  make loop that will continue
- until
-  no switching occurs: */
-/* while (switching) {
-     switching = false;
-     b = list.getElementsByTagName("li");
-     for (i = 0; i < (b.length - 1); i++) {
-         shouldSwitch = false;
-         if (b[i].innerHTML.toLowerCase() > b[i + 1].innerHTML.toLowerCase()) {
-             shouldSwitch = true;
-             break;
-         }
-     }
-     if (shouldSwitch) {
-         b[i].parentNode.insertBefore(b[i + 1], b[i]);
-         switching = true;
-     }
- }
-};*/
-let anilist = document.getElementsByClassName('anilist');
 
-function ins(Anime, alt = null) {
-    // New created bold and italised list elements
-    createdElementBl = document.createElement('b');
-    createdElementEm = document.createElement('em');
-
-    if (Anime[0] == 'A') {
-        createdElementBl.innerText(Anime);
-        createdElementEm.innerText(alt);
-        createdElement = createdElementBl + "--" + createdElementEm;
-        anilist.appendChild(createdElement);
-        console.log('A is inserted');
-    }
-    else if (Anime[0] == 'B') {
-
-    }
-    else if (Anime[0] == 'C') {
-
-    }
-    else if (Anime[0] == 'D') {
-
-    }
-    else if (Anime[0] == 'E') {
-
-    }
-    else if (Anime[0] == 'F') {
-
-    }
-    else if (Anime[0] == 'G') {
-
-    }
-    else if (Anime[0] == 'H') {
-
-    }
-    else if (Anime[0] == 'I') {
-
-    }
-    else if (Anime[0] == 'J') {
-
-    }
-    else if (Anime[0] == 'K') {
-
-    }
-    else if (Anime[0] == 'L') {
-
-    }
-    else if (Anime[0] == 'M') {
-
-    }
-    else if (Anime[0] == 'N') {
-
-    }
-    else if (Anime[0] == 'O') {
-
-    }
-    else if (Anime[0] == 'P') {
-
-    }
-    else if (Anime[0] == 'Q') {
-
-    }
-    else if (Anime[0] == 'R') {
-
-    }
-    else if (Anime[0] == 'S') {
-
-    }
-    else if (Anime[0] == 'T') {
-
-    }
-    else if (Anime[0] == 'U') {
-
-    }
-    else if (Anime[0] == 'V') {
-
-    }
-    else if (Anime[0] == 'W') {
-
-    }
-    else if (Anime[0] == 'X') {
-
-    }
-    else if (Anime[0] == 'Y') {
-
-    }
-    else if (Anime[0] == 'Z') {
-
-    }
-    else {
-
-    }
+ /*var AnimeFirstletter = {
+    A: document.getElementById('A'),
+    B: document.getElementById('B'),
+    C: document.getElementById('C'),
+    D: document.getElementById('D'),
+    E: document.getElementById('E'),
+    F: document.getElementById('F'),
+    G: document.getElementById('G'),
+    H: document.getElementById('H'),
+    I: document.getElementById('I'),
+    J: document.getElementById('J'),
+    K: document.getElementById('K'),
+    L: document.getElementById('L'),
+    M: document.getElementById('M'),
+    N: document.getElementById('N'),
+    O: document.getElementById('O'),
+    P: document.getElementById('P'),
+    Q: document.getElementById('Q'),
+    R: document.getElementById('R'),
+    S: document.getElementById('S'),
+    T: document.getElementById('T'),
+    U: document.getElementById('U'),
+    V: document.getElementById('V'),
+    W: document.getElementById('W'),
+    X: document.getElementById('X'),
+    Y: document.getElementById('Y'),
+    Z: document.getElementById('Z'),
+    NON: document.getElementById('0-9')
 };
+*/
+
+ /* center {
+            position: sticky;
+            position: -webkit-sticky;
+            position: -moz-sticky;
+            position: -o-sticky;
+            position: -ms-sticky;
+            top: 0;
+            margin-left: 2px;
+            margin-right: 2px;
+        }
+
+        h1 {
+            background-color: rgb(21, 21, 255);
+            text-transform: uppercase;
+            font-size: 72px;
+            text-decoration: underline;
+            margin-left: 0px;
+            margin-right: 0px;
+            padding: 20px;
+        } */ 
+
+    //     <script type="text/javascript" src="list.js"></script>
+    // <!--Displays Date-->
+    // <script type="text/javascript">
+    //     let d = new Date();
+    //     document.body.innerHTML = "<h3>Current Time: " + d.getHours() + ":" + d.getMinutes() + ":" + d.getSeconds();
+    //     "</h3>"
+    // </script>

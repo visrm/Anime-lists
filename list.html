@@ -11,97 +11,49 @@
     <meta http-equiv="author" content="Rahul Murali" />
     <meta http-equiv="pragma" content="no-cache" />
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
-    <!--Internal stylesheet-->
-    <style>
-        * {
-            margin-top: 3px;
-            margin-bottom: 3px;
-            margin-right: 10px;
-            padding: 4px;
-        }
+    <!--external stylesheet-->
+    <link rel="stylesheet" type="text/css" href="style.css">
 
-        body {
-            background-image: url("list-bg\(Default\).jpg");
-            background-position: absolute;
-            background-repeat: no-repeat;
-            background-size: cover;
-            font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-            font-weight: bolder;
-            font-stretch: expanded;
-        }
-
-        h1 {
-            background-color: rgba(97, 97, 174, 0.857);
-            text-transform: uppercase;
-            font-size: 72px;
-            text-decoration: underline;
-            margin-top: 0px;
-            margin-bottom: 0px;
-            padding: 10px;
-        }
-
-        ul {
-            margin-left: 120px;
-        }
-
-        li.anilist {
-            font-size: xx-large;
-            font-weight: 700;
-        }
-
-        ol>li {
-            text-transform: capitalize;
-            padding: 3px;
-            margin-left: 50px;
-            font-size: x-large;
-            font-weight: 650;
-        }
-
-        #new {
-            font-size: xx-large;
-            font-stretch: expanded;
-            font-weight: 900;
-            margin-bottom: 1px;
-            margin-top: 1px;
-            list-style-position: outside;
-            color: rgb(11, 11, 80);
-        }
-
-        .inp {
-            height: 48px;
-            width: 1750px;
-            font-size: x-large;
-        }
-
-        .Bt {
-            height: 36px;
-            width: 500px;
-            font-size: x-large;
-        }
-    </style>
 </head>
 
 <body>
-    <!--Displays Date-->
+    <!--Moon Scrolling Effect-->
+    <section>
+        <img src="bg.jpg" id="bg">
+        <img src="moon.png" id="moon">
+        <img src="road.png" id="road">
+        <img src="mountain.png" id="mountain">
+    </section>
+
     <script type="text/javascript">
-        let d = new Date();
-        document.body.innerHTML = "<h3>Current Time: " + d.getHours() + ":" + d.getMinutes() + ":" + d.getSeconds();
-        "</h3>"
+        let bg = document.getElementById("bg");
+        let moon = document.getElementById("moon");
+        let mountain = document.getElementById("mountain");
+        let road = document.getElementById("road");
+        let head = document.getElementById("Head");
+
+        window.addEventListener('scroll', function () {
+            var value = window.scrollY;
+            bg.style.top = value * 0.5 + 'px';
+            moon.style.left = value * 0.5 + 'px';
+            mountain.style.top = value * 0.15 + 'px';
+            head.style.top = value * 1 + 'px';
+        })
     </script>
 
     <center>
-        <h1><b>Anime&nbsp;List</b></h1>
-        <hr />
+        <h1 id="Head"><b>Anime&nbsp;List</b></h1>
     </center>
+    <hr />
     <!--ol type="1"-->
     <!--The list-->
     <ul id="Anilist" type="square">
-        <li class="anilist" id="0-9">0-9
+        <div class="anilist" id="0-9">0-9
             <ol>
                 <li><b>3D Girlfriend</b>--<em>3d-Kanojo</em></li>
             </ol>
-        </li>
-        <li class="anilist" id="A">A
+        </div>
+        <div class="anilist" id="A">A
             <ol>
                 <li><b>A Certain scientific ....</b>--<em>Toaru kagaku no ....</em><sub>[4]</sub></li>
                 <li><b>Absolute duo</b>--<em>absolute duo</em></li>
@@ -113,8 +65,8 @@
                 <li><b>Assassination Classroom</b>--<em>Ansatsu no kyoushitsu</em></li>
                 <li><b>Attack On Titans</b>--<em>Shingeki no kyoujin</em></li>
             </ol>
-        </li>
-        <li class="anilist" id="B">B
+        </div>
+        <div class="anilist" id="B">B
             <ol>
                 <li><b>Baby Steps</b></li>
                 <li><b>Bakuman</b></li>
@@ -134,8 +86,8 @@
                 <li><b>Bungou stray dogs</b></li>
                 <li><em>Busou Shoujo machiavillianism</em></li>
             </ol>
-        </li>
-        <li class="anilist" id="C">C
+        </div>
+        <div class="anilist" id="C">C
             <ol>
                 <li><b>Charlotte</b></li>
                 <li><em>Chihayafuru</em></li>
@@ -144,8 +96,8 @@
                 <li><b>Code:Breaker</b></li>
                 <li><b>Cross Ange: Rondo of Angels and Dragon</b><em>Cross Ange: Tenshi to Ryuu no Rondo</em></li>
             </ol>
-        </li>
-        <li class="anilist" id="D">D
+        </div>
+        <div class="anilist" id="D">D
             <ol>
                 <li><b>Darling in the franxx</b></li>
                 <li><b>Days</b></li>
@@ -161,13 +113,13 @@
                 <li><b>Durarara!</b></li>
                 <li><b>Dusk maiden of Amnesia</b>--<em>Tasogare OtomeXAmnesia</em></li>
             </ol>
-        </li>
-        <li class="anilist" id="E">E
+        </div>
+        <div class="anilist" id="E">E
             <ol>
                 <li><b>Evil or Live</b></li>
             </ol>
-        </li>
-        <li class="anilist" id="F">F
+        </div>
+        <div class="anilist" id="F">F
             <ol>
                 <li><b>Fairy tail</b>--<em>Fairy tail</em></li>
                 <li><b>False Love</b>--<em>Nisekoi</em></li>
@@ -176,8 +128,8 @@
                 <li><b>Future Diary</b>--<em>Mirai nikki</em></li>
                 <li><b>Fuuka</b></li>
             </ol>
-        </li>
-        <li class="anilist" id="G">G
+        </div>
+        <div class="anilist" id="G">G
             <ol>
                 <li><b>Gamers!</b></li>
                 <li><b>Gangsta</b></li>
@@ -186,8 +138,8 @@
                 <li><b>Goblin Slayer</b></li>
                 <li><b>Grand Blue</b></li>
             </ol>
-        </li>
-        <li class="anilist" id="H">H
+        </div>
+        <div class="anilist" id="H">H
             <ol>
                 <li><em>Haikyuu!!</em></li>
                 <li><em>Hajime no ippo</em></li>
@@ -199,8 +151,8 @@
                 <li><b>Hunter X Hunter</b></li>
                 <li><b>Hyouka</b></li>
             </ol>
-        </li>
-        <li class="anilist" id="I">I
+        </div>
+        <div class="anilist" id="I">I
             <ol>
                 <li><b>inazuma eleven</b></li>
                 <li><b>Infinity Stratos</b>--<em>(IS)</em></li>
@@ -208,13 +160,13 @@
                 <li><b>Is it wrong to try to pick up girls in the dungeon?</b>--<em>Danmachi</em></li>
                 <li><em>Isekai wa Smartphone to tomoni</em></li>
             </ol>
-        </li>
-        <li class="anilist" id="J">J
+        </div>
+        <div class="anilist" id="J">J
             <ol>
                 <li><em>Jujutsu Kaisen</em></li>
             </ol>
-        </li>
-        <li class="anilist" id="K">K
+        </div>
+        <div class="anilist" id="K">K
             <ol>
                 <li><b>K:</b><sub>[03]</sub></li>
                 <li><b>Kabaneri of the Iron Fortress</b>--<em>Koutetsujou no Kabaneri</em></li>
@@ -229,13 +181,13 @@
                 <li><b>Kubikiri Cycle</b>--<em>Zaregoto</em></li>
                 <li><em>Kuroko no Basket</em></li>
             </ol>
-        </li>
-        <li class="anilist" id="L">L
+        </div>
+        <div class="anilist" id="L">L
             <ol>
                 <li><b>Love &amp; Lies</b>--<em>koi to uso</em></li>
             </ol>
-        </li>
-        <li class="anilist" id="M">M
+        </div>
+        <div class="anilist" id="M">M
             <ol>
                 <li><b>Magi:Adventures of Sinbad</b>--<em>Sinbad no bouken</em></li>
                 <li><b>Magi:The Labyrinth of Magic</b></li>
@@ -246,8 +198,8 @@
                         machigatteiru/Oregairu</em></li>
                 <li><b>My Hero Academia</b>--<em>Boku no Hero</em></li>
             </ol>
-        </li>
-        <li class="anilist" id="N">N
+        </div>
+        <div class="anilist" id="N">N
             <ol>
                 <li><b>Naruto</b></li>
                 <li><b>Nauto Shippuden</b></li>
@@ -257,8 +209,8 @@
                 <li><em>Noragami</em></li>
                 <li><em>Nurarihyoun no mago</em></li>
             </ol>
-        </li>
-        <li class="anilist" id="O">O
+        </div>
+        <div class="anilist" id="O">O
             <ol>
                 <li><b>O Maidens in your savage season!</b>--<em>Araburu kisetsu no otome domo yo!</em></li>
                 <li><b>One Outs</b></li>
@@ -267,15 +219,15 @@
                 <li><b>Ookami-san and her 7 companions</b>--<em>Ookami-San to shichinin no nakama</em></li>
                 <li><b>Orange</b></li>
             </ol>
-        </li>
-        <li class="anilist" id="P">P
+        </div>
+        <div class="anilist" id="P">P
             <ol>
                 <li><b>Pandora Hearts</b></li>
                 <li><b>Plastic memories</b></li>
                 <li><b>Pokemon</b></li>
             </ol>
-        </li>
-        <li class="anilist" id="R">R
+        </div>
+        <div class="anilist" id="R">R
             <ol>
                 <li><b>Radiant</b></li>
                 <li><b>Rascal does not dream of bunnygirl senpai</b>--<em>Sieshun buta yarou wa bunnyGirl senpai no
@@ -285,8 +237,8 @@
                 <li><b>Re:Zero Starting life in another world</b>--<em>Re:Zero kara hajimeru isekai seikatsu</em></li>
                 <li><em>Ryuugajou nanana no maizoukin</em></li>
             </ol>
-        </li>
-        <li class="anilist" id="S">S
+        </div>
+        <div class="anilist" id="S">S
             <ol>
                 <li><b>Samurai Champloo</b></li>
                 <li><b>Seraph of the end</b>--<em>Owari no seraph</em></li>
@@ -297,8 +249,8 @@
                 <li><b>Soul Eaters</b></li>
                 <li><b>Strike the blood</b></li>
             </ol>
-        </li>
-        <li class="anilist" id="T">T
+        </div>
+        <div class="anilist" id="T">T
             <ol>
                 <li><b>The Devils Ring</b></li>
                 <li><b>The Irregular at Magic Highschool</b><em>Mahouka koukou no rettousei</em></li>
@@ -316,57 +268,57 @@
                 <li><b>Tower of god</b>--<em>Kami no tou</em></li>
                 <li><b>Twin Star Exorcists</b>--<em>Sousei no Onmyouji</em></li>
             </ol>
-        </li>
-        <li class="anilist" id="U">U
+        </div>
+        <div class="anilist" id="U">U
             <ol>
                 <li><b>Undefeated Bahamut Chronicles</b>--<em>Saijaku muhai no bamamut</em></li>
                 <li><b>UQ Holders</b></li>
             </ol>
-        </li>
-        <li class="anilist" id="V">V
+        </div>
+        <div class="anilist" id="V">V
             <ol>
                 <li><b>ValxLove</b></em></li>
                 <li><b>Vinland saga</b></li>
             </ol>
-        </li>
-        <li class="anilist" id="W">W
+        </div>
+        <div class="anilist" id="W">W
             <ol>
                 <li><b>We dont't know love yet</b>--<em>Koi wo Shiranai Bokutachi wa</em></li>
                 <li><b>Welcome to Demon School, iruma-kun</b>--<em>Mairimashita! Iruma-kun</em></li>
                 <li><b>Wolf Girl and Black Prince</b>--<em>Ookami Shoujo to Kuro Ouji</em></li>
                 <li><b>World Trigger</b></li>
             </ol>
-        </li>
-        <li class="anilist" id="Y">Y
+        </div>
+        <div class="anilist" id="Y">Y
             <ol>
                 <li><b>Yamada-kun and 7 witches</b>--<em>Yamada kun to 7nin no mago</em></li>
                 <li><em>Yasuga no sora</em></li>
                 <li><b>Your lie in Arpril</b>--<em>Shigatsu wa kimi no uso</em></li>
                 <li><b>Yuri on ice</b></li>
             </ol>
-        </li>
-        <li class="anilist" id="Z">Z
+        </div>
+        <div class="anilist" id="Z">Z
             <ol>
                 <li><b>Zetman</b></li>
                 <li><em>Zettai no karen Children</em></li>
             </ol>
-        </li>
+        </div>
     </ul>
     <hr />
     <fieldset id="new">
         <legend>Updates</legend>
         <label>
-            Anime name: <br /><input name="Anime_name" type="text" placeholder="Enter  anime  name" id="Anime" maxlength="80"
-                size="60" class="inp" />
+            Anime name: <br /><input name="Anime_name" type="text" placeholder="Enter  anime  name" id="Anime"
+                maxlength="80" size="60" class="inp" />
         </label><br />
         <label>
             Alternate name: <br /><input name="Alt_name" type="text" placeholder="Enter  alternate  name" id="Alt"
                 maxlength="70" size="60" class="inp" />
         </label><br />
-        <button type="button" name="Insertitem" value="Inserted" class="Bt" id="insli" onClick="ins(Anime, alt = null);">Insert</button>
+        <button type="button" name="Insertitem" value="Inserted" class="Bt" id="insli" onclick=ins();>Insert</button>
         <button type="button" name="Removeitem" value="Removed" class="Bt" id="remli">Remove</button>
     </fieldset>
-    <script type="text/javascript" src="list.js"></script>
+
 </body>
 
 </html>
