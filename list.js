@@ -30,31 +30,10 @@
 };
 */
 
- /* center {
-            position: sticky;
-            position: -webkit-sticky;
-            position: -moz-sticky;
-            position: -o-sticky;
-            position: -ms-sticky;
-            top: 0;
-            margin-left: 2px;
-            margin-right: 2px;
-        }
-
-        h1 {
-            background-color: rgb(21, 21, 255);
-            text-transform: uppercase;
-            font-size: 72px;
-            text-decoration: underline;
-            margin-left: 0px;
-            margin-right: 0px;
-            padding: 20px;
-        } */ 
-
-    //     <script type="text/javascript" src="list.js"></script>
-    // <!--Displays Date-->
-    // <script type="text/javascript">
-    //     let d = new Date();
-    //     document.body.innerHTML = "<h3>Current Time: " + d.getHours() + ":" + d.getMinutes() + ":" + d.getSeconds();
-    //     "</h3>"
-    // </script>
+{/* <script type="text/javascript" src="list.js"></script> */}
+// <!--Displays Date-->
+// <script type="text/javascript">
+//     let d = new Date();
+//     document.body.innerHTML = "<h3>Current Time: " + d.getHours() + ":" + d.getMinutes() + ":" + d.getSeconds();
+//     "</h3>"
+// </script> 

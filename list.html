@@ -12,17 +12,21 @@
     <meta http-equiv="pragma" content="no-cache" />
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
     <!--external stylesheet-->
-    <link rel="stylesheet" type="text/css" href="style.css">
+    <link rel="stylesheet" type="text/css" href="style.css" />
 
 </head>
 
 <body>
-    <!--Moon Scrolling Effect-->
+
+    <!--Parallax Moon Scrolling Effect-->
     <section>
-        <img src="bg.jpg" id="bg">
-        <img src="moon.png" id="moon">
-        <img src="road.png" id="road">
-        <img src="mountain.png" id="mountain">
+        <!--Images for the Parallax moon scrolling effect-->
+        <img src="img src/bg.jpg" id="bg">
+        <img src="img src/moon.png" id="moon">
+        <img src="img src/mountain.png" id="mountain">
+        <img src="img src/road.png" id="road">
+        <!-- emerging text-->
+        <h1 id="text">Anime Lists</h1>
     </section>
 
     <script type="text/javascript">
@@ -30,22 +34,22 @@
         let moon = document.getElementById("moon");
         let mountain = document.getElementById("mountain");
         let road = document.getElementById("road");
-        let head = document.getElementById("Head");
+        let text = document.getElementById("text");
 
+        //Eventlistener assigned for scrolling
         window.addEventListener('scroll', function () {
+            // variable "value" assigned for Scroll attribute of HTML based on Y axes
             var value = window.scrollY;
+            // variation of position of imgs , as scrolled
             bg.style.top = value * 0.5 + 'px';
             moon.style.left = value * 0.5 + 'px';
             mountain.style.top = value * 0.15 + 'px';
-            head.style.top = value * 1 + 'px';
-        })
+            road.style.top = value * 0.15 + 'px';
+            text.style.top = value * 1 + 'px';
+        });
     </script>
+    <br />
 
-    <center>
-        <h1 id="Head"><b>Anime&nbsp;List</b></h1>
-    </center>
-    <hr />
-    <!--ol type="1"-->
     <!--The list-->
     <ul id="Anilist" type="square">
         <div class="anilist" id="0-9">0-9
@@ -304,21 +308,26 @@
             </ol>
         </div>
     </ul>
-    <hr />
+    <br />
     <fieldset id="new">
         <legend>Updates</legend>
         <label>
-            Anime name: <br /><input name="Anime_name" type="text" placeholder="Enter  anime  name" id="Anime"
-                maxlength="80" size="60" class="inp" />
-        </label><br />
+            Anime name:<input name="Anime_name" type="text" placeholder="Enter  anime  name" id="Anime" maxlength="80"
+                size="60" class="inp" />
+        </label>
+        <br />
+        <br />
         <label>
-            Alternate name: <br /><input name="Alt_name" type="text" placeholder="Enter  alternate  name" id="Alt"
+            Alternate name:<input name="Alt_name" type="text" placeholder="Enter  alternate  name" id="Alt"
                 maxlength="70" size="60" class="inp" />
-        </label><br />
+        </label>
+        <br />
+        <br />
+    </fieldset>
+    <div id="Inputs">
         <button type="button" name="Insertitem" value="Inserted" class="Bt" id="insli" onclick=ins();>Insert</button>
         <button type="button" name="Removeitem" value="Removed" class="Bt" id="remli">Remove</button>
-    </fieldset>
-
+    </div>
 </body>
 
 </html>

@@ -1,12 +1,13 @@
 
         * {
-            margin: 3px;
+            margin: 0;
             padding: 0;
         }
 
         body {
             background: #0a2a43;
             min-height: 1500px;
+            height: 50000px;
         }
 
         section {
@@ -19,7 +20,7 @@
             align-items: center;
         }
 
-        section:before {
+        section::before {
             content: '';
             position: absolute;
             bottom: 0;
@@ -29,7 +30,7 @@
             z-index: 10000;
         }
 
-        section:after {
+        section::after {
             content: '';
             position: absolute;
             top: 0;
@@ -51,17 +52,18 @@
             pointer-events: none;
         }
 
-        #Head {
+        #text {
             position: relative;
             color: #fff;
-            font-size: 10em;
+            font-size: 250pt;
+            font-weight: 700;
             z-index: 1;
         }
 
         #road {
             z-index: 2;
         }
-
+             
         ul {
             margin-left: 120px;
             padding: 4px;
@@ -69,37 +71,55 @@
         }
 
         div.anilist {
-            font-size: 4em;
+            font-size: 5em;
             font-weight: 700;
+            margin-left: 100px;
         }
 
         ol>li {
             text-transform: capitalize;
-            padding: 3px;
-            margin-left: 90px;
-            font-size: 55%;
+            padding: 4px;
+            margin-left: 120px;
+            font-size: 75%;
             font-weight: 250;
+            font-stretch: expanded;
         }
 
         #new {
-            font-size: xx-large;
+            font-size: 71pt;
             font-stretch: expanded;
             font-weight: 900;
-            margin: 8px;
-            padding: 8px;
+            margin-left: 100px;
+            margin-right: 75px;
+            margin-bottom: 50px;
+            padding: 18px;
             list-style-position: outside;
             color: #fff;
         }
 
         .inp {
-            height: 48px;
-            width: 1750px;
-            font-size: x-large;
+            height: 4em;
+            width: 125em;
+            font-size: 26pt;
+            margin-left: 20px;
         }
 
-        .Bt {
-            height: 36px;
-            width: 500px;
-            font-size: x-large;
+        .Bt { 
+            background-color: #930553;
+            height: 80px;
+            width: 480px;
+            margin-left: 150pt;
+            font-size: 22pt;
+            border-radius: 13%;   
         }
-    
+
+        .Bt:hover {
+            background-color: #930553;
+            height: 100px;
+            width: 500px;
+            margin-left: 150pt;
+            font-size: 22pt;
+            border-radius: 13%;
+        }
+
+       
