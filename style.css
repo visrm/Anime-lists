@@ -7,7 +7,7 @@
         body {
             background: #0a2a43;
             min-height: 1500px;
-            height: 50000px;
+            height: 25000px;
         }
 
         section {
@@ -97,29 +97,59 @@
             color: #fff;
         }
 
-        .inp {
-            height: 4em;
-            width: 125em;
-            font-size: 26pt;
-            margin-left: 20px;
+        input[placeholder]{
+            background-color: rgb(204, 201, 255);
+            color: rgb(58, 49, 232);
+            font-size: 70pt;
+            margin-left: 12pt;
+            height: 135px;
+            width: 4150px;
+            text-align: center;
         }
 
-        .Bt { 
-            background-color: #930553;
-            height: 80px;
-            width: 480px;
+        div.hoverBt {
             margin-left: 150pt;
-            font-size: 22pt;
-            border-radius: 13%;   
         }
 
-        .Bt:hover {
-            background-color: #930553;
+        #insli { 
+            background-color: #a71766;
+            color: #fff;
+            height: 95px;
+            width: 490px;
+            font-size: 32pt;
+            letter-spacing: 5px;
+            font-weight:400;   
+        }
+
+        #remli { 
+            background-color: #a71766;
+            color: #fff;
+            height: 95px;
+            width: 490px;
+            font-size: 32pt;
+            letter-spacing: 5px;
+            font-weight:400; 
+            margin-left: 100px;  
+        }
+        
+        #insli:hover {
+            background-color: #e83497;
+            color: #fff;
             height: 100px;
-            width: 500px;
-            margin-left: 150pt;
-            font-size: 22pt;
-            border-radius: 13%;
+            width: 496px;
+            font-size: 32pt;
+            letter-spacing: 5px;
+            font-weight:400;
+        }
+
+        #remli:hover {
+            background-color: #e83497;
+            color: #fff;
+            height: 100px;
+            width: 496px;
+            font-size: 32pt;
+            letter-spacing: 5px;
+            font-weight:400;
         }
 
        
