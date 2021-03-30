@@ -7,7 +7,7 @@
         body {
             background: #0a2a43;
             min-height: 1500px;
-            height: 25000px;
+            height: 21000px;
         }
 
         section {
@@ -16,6 +16,10 @@
             height: 100vh;
             overflow: hidden;
             display: flex;
+            display: -webkit-flex;
+            display: -moz-flex;
+            display: -ms-flex;
+            display: -o-flex;
             justify-content: center;
             align-items: center;
         }
@@ -109,6 +113,7 @@
 
         div.hoverBt {
             margin-left: 150pt;
+            margin-bottom: 40px;
         }
 
         #insli { 
@@ -152,4 +157,54 @@
             font-weight:400;
         }
 
-       
+        footer {
+            display: flex;
+            display: -webkit-flex;
+            display: -moz-flex;
+            display: -ms-flex;
+            display: -o-flex;
+            flex-flow: row wrap;
+            padding: 50px;
+            color: #fff;
+            background-color:#011c39;
+        }
+
+        .footer > *{
+            flex: 1 100%;
+        }
+
+        .footer-left {
+            margin-right: 1.25em;
+            margin-bottom: 2em;
+        }
+
+      .footer-left p {
+          padding-right: 20%;
+          color: #999;
+      }
+
+      .socials a {
+          background: #364a62;
+          width: 40px;
+          height: 40px;
+          display: inline-block;
+          margin-right: 10px;
+      }
+
+        .socials a i {
+            color: #e7f2f4;
+            padding: 10px 12px;
+            font-size: 20px;
+        }
+
+        @media screen and (min-width: 600px) {
+            .footer-left {
+                flex: 1 0px;
+            }
+        }
+
+        @media (max-width: 600px) {
+            .footer {
+                padding: 15px;
+            }
+        }

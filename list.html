@@ -12,6 +12,8 @@
     <meta http-equiv="pragma" content="no-cache" />
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
     <!--external stylesheet-->
+    <link rel="stylesheet" type="text/css"
+        href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" />
     <link rel="stylesheet" type="text/css" href="style.css" />
 
 </head>
@@ -313,7 +315,9 @@
     </ul>
     <br />
     <fieldset id="new">
-        <legend>Updates</legend>
+        <legend>
+            <<- Updates ->>
+        </legend>
         <label>
             Anime name : <input name="Anime_name" type="text" placeholder="Enter  anime  name" id="Anime" maxlength="80"
                 size="60" class="inp" />
@@ -327,10 +331,28 @@
         <br />
         <br />
     </fieldset>
+    <!--A Hoverable <insert> and <remove> buttons-->
     <div class="hoverBt">
         <button type="submit" name="Insertitem" value="Inserted" class="Bt" id="insli">Insert</button>
         <button type="submit" name="Removeitem" value="Removed" class="Bt" id="remli">Remove</button>
     </div>
+    <!--footer for social media and other related addresses and links-->
+    <footer class="footer">
+        <div class="footer-left">
+            <div class="socials">
+                <p>Socials</p>
+                <a href="#"><i class="fa fa-facebook"></i></a>
+                <a href="#"><i class="fa fa-twitter"></i></a>
+                <a href="#"><i class="fa fa-instagram"></i></a>
+                <a href="#"><i class="fa fa-github"></i></a>
+                <a href="#"><i class="fa fa-discord"></i></a>
+            </div>
+        </div>
+        <ul class="footer-right">
+            <!--Future scopes-->
+        </ul>
+    </footer>
+
 </body>
 
 </html>
