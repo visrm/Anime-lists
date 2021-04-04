@@ -19,38 +19,44 @@
 </head>
 
 <body>
+    <header>
+        <!--Parallax Moon Scrolling Effect-->
+        <section>
+            <!--Images for the Parallax moon scrolling effect-->
+            <img src="img src/bg.jpg" id="bg">
+            <img src="img src/moon.png" id="moon">
+            <img src="img src/mountain.png" id="mountain">
+            <img src="img src/road.png" id="road">
+            <!-- emerging text-->
+            <h1 id="text">Anime Lists</h1>
+        </section>
 
-    <!--Parallax Moon Scrolling Effect-->
-    <section>
-        <!--Images for the Parallax moon scrolling effect-->
-        <img src="img src/bg.jpg" id="bg">
-        <img src="img src/moon.png" id="moon">
-        <img src="img src/mountain.png" id="mountain">
-        <img src="img src/road.png" id="road">
-        <!-- emerging text-->
-        <h1 id="text">Anime Lists</h1>
-    </section>
+        <script type="text/javascript">
+            let bg = document.getElementById("bg");
+            let moon = document.getElementById("moon");
+            let mountain = document.getElementById("mountain");
+            let road = document.getElementById("road");
+            let text = document.getElementById("text");
 
-    <script type="text/javascript">
-        let bg = document.getElementById("bg");
-        let moon = document.getElementById("moon");
-        let mountain = document.getElementById("mountain");
-        let road = document.getElementById("road");
-        let text = document.getElementById("text");
-
-        //Eventlistener assigned for scrolling
-        window.addEventListener('scroll', function () {
-            // variable "value" assigned for Scroll attribute of HTML based on Y axes
-            var value = window.scrollY;
-            // variation of position of imgs , as scrolled
-            bg.style.top = value * 0.5 + 'px';
-            moon.style.left = value * 0.5 + 'px';
-            mountain.style.top = value * 0.15 + 'px';
-            road.style.top = value * 0.15 + 'px';
-            text.style.top = value * 1 + 'px';
-        });
-    </script>
-    <br />
+            //Eventlistener assigned for scrolling
+            window.addEventListener('scroll', function () {
+                // variable "value" assigned for Scroll attribute of HTML based on Y axes
+                var value = window.scrollY;
+                // variation of position of imgs , as scrolled
+                bg.style.top = value * 0.5 + 'px';
+                moon.style.left = value * 0.5 + 'px';
+                mountain.style.top = value * 0.15 + 'px';
+                road.style.top = value * 0.15 + 'px';
+                text.style.top = value * 1 + 'px';
+            });
+        </script>
+        <br />
+        <nav id="nav">
+            <hgroup>
+                <h1>Anime Lister :</h1><p>Personal listing site</p>
+            </hgroup>
+        </nav>
+    </header>
 
     <!--The list-->
     <ul id="Anilist" type="square">
@@ -93,7 +99,7 @@
                 <li><em>Busou Shoujo machiavillianism</em></li>
             </ol>
         </div>
-        <div class="anilist" id="C">Creview
+        <div class="anilist" id="C">C
             <ol>
                 <li><b>Charlotte</b></li>
                 <li><em>Chihayafuru</em></li>
@@ -333,8 +339,8 @@
     </fieldset>
     <!--A Hoverable <insert> and <remove> buttons-->
     <div class="hoverBt">
-        <button type="submit" name="Insertitem" value="Inserted" class="Bt" id="insli">Insert</button>
-        <button type="submit" name="Removeitem" value="Removed" class="Bt" id="remli">Remove</button>
+        <button type="submit" name="Insertitem" value="inserted" class="Bt" id="insli">Insert</button>
+        <button type="submit" name="Removeitem" value="removed" class="Bt" id="remli">Remove</button>
     </div>
     <!--footer for social media and other related addresses and links-->
     <footer class="footer">

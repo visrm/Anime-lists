@@ -10,6 +10,24 @@
             height: 21000px;
         }
 
+        #nav {
+            background-color: #04406d;
+            position: sticky;
+            position: -webkit-sticky;
+            position: -moz-sticky;
+            position: -ms-sticky;
+            position: -o-sticky;
+            top: 0;
+            padding: 30px;
+            height: 175px;
+            z-index: 100;
+        }
+
+        hgroup {
+            color: rgb(184, 224, 255);
+            font-size: 40pt;
+        }
+
         section {
             position: relative;
             width: 100%;
@@ -58,7 +76,7 @@
         #text {
             position: relative;
             color: #fff;
-            font-size: 250pt;
+            font-size: 18em;
             font-weight: 700;
             z-index: 1;
         }
@@ -165,6 +183,7 @@
             padding: 50px;
             color: #fff;
             background-color:#011c39;
+            height: 1150px;
         }
 
         .footer > *{
@@ -177,16 +196,40 @@
         }
 
       .footer-left p {
-          padding-right: 20%;
-          color: #999;
-      }
+            padding-right: 20%;
+            padding-bottom: 40px;
+            color: rgb(181, 181, 181);
+            font-size: 5.35em;
+        }
 
       .socials a {
-          width: 8em;
-          height:8em;
-          display: inline-block;
-          margin-right: 80px;
-      }
+            width: 8.5em;
+            height:8.5em;
+            display: inline-block;
+            margin-right: 80px;
+            border-radius: 60px 60px 60px 60px;
+            -moz-border-radius: 60px 60px 60px 60px;
+            -webkit-border-radius: 60px 60px 60px 60px;
+            border-style: outset;
+            box-shadow: 10px 10px #093554;
+            -moz-box-shadow: 10px 10px #093554;
+            -webkit-box-shadow: 10px 10px #093554;
+        }
+
+      .socials a:hover {
+            width: 8.5em;
+            height:8.5em;
+            display: inline-block;
+            margin-right: 80px;
+            border-radius: 60px 60px 60px 60px;
+            -moz-border-radius: 60px 60px 60px 60px;
+            -webkit-border-radius: 60px 60px 60px 60px;
+            border-style: outset;
+            box-shadow: 10px 10px 10.5px #064d80;
+            -moz-box-shadow: 10px 10px 10.5px #064d80;
+            -webkit-box-shadow: 10px 10px 10.5px #064d80;
+            color: rgb(41, 128, 183);
+        }
 
         .socials a i {
             color: #e7f2f4;
