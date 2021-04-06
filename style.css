@@ -1,0 +1,208 @@
+
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            background: #0a2a43;
+            min-height: 1500px;
+            height: 21000px;
+        }
+
+        section {
+            position: relative;
+            width: 100%;
+            height: 100vh;
+            overflow: hidden;
+            display: flex;
+            display: -webkit-flex;
+            display: -moz-box;
+            display: -ms-flexbox;
+            justify-content: center;
+            align-items: center;
+        }
+
+        section::before {
+            content: '';
+            position: absolute;
+            bottom: 0;
+            width: 100%;
+            height: 100px;
+            background: linear-gradient(to top, #0a2a43, transparent);
+            z-index: 10000;
+        }
+
+        section::after {
+            content: '';
+            position: absolute;
+            top: 0;
+            Left: 0;
+            width: 100%;
+            height: 100%;
+            background: #0a2a43;
+            z-index: 10000;
+            mix-blend-mode: color;
+        }
+
+        section img {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            pointer-events: none;
+        }
+
+        #text {
+            position: relative;
+            color: #fff;
+            font-size: 250pt;
+            font-weight: 700;
+            z-index: 1;
+        }
+
+        #road {
+            z-index: 2;
+        }
+             
+        ul {
+            margin-left: 120px;
+            padding: 4px;
+            color: #fff;
+        }
+
+        div.anilist {
+            font-size: 5em;
+            font-weight: 700;
+            margin-left: 100px;
+        }
+
+        ol>li {
+            text-transform: capitalize;
+            padding: 4px;
+            margin-left: 120px;
+            font-size: 75%;
+            font-weight: 250;
+            font-stretch: expanded;
+        }
+
+        #new {
+            font-size: 71pt;
+            font-stretch: expanded;
+            font-weight: 900;
+            margin-left: 100px;
+            margin-right: 75px;
+            margin-bottom: 50px;
+            padding: 18px;
+            list-style-position: outside;
+            color: #fff;
+        }
+
+        input[placeholder]{
+            background-color: rgb(204, 201, 255);
+            color: rgb(58, 49, 232);
+            font-size: 70pt;
+            margin-left: 12pt;
+            height: 135px;
+            width: 4150px;
+            text-align: center;
+        }
+
+        div.hoverBt {
+            margin-left: 150pt;
+            margin-bottom: 40px;
+        }
+
+        #insli { 
+            background-color: #a71766;
+            color: #fff;
+            height: 95px;
+            width: 490px;
+            font-size: 32pt;
+            letter-spacing: 5px;
+            font-weight:400;   
+        }
+
+        #remli { 
+            background-color: #a71766;
+            color: #fff;
+            height: 95px;
+            width: 490px;
+            font-size: 32pt;
+            letter-spacing: 5px;
+            font-weight:400; 
+            margin-left: 100px;  
+        }
+        
+        #insli:hover {
+            background-color: #e83497;
+            color: #fff;
+            height: 100px;
+            width: 496px;
+            font-size: 32pt;
+            letter-spacing: 5px;
+            font-weight:400;
+        }
+
+        #remli:hover {
+            background-color: #e83497;
+            color: #fff;
+            height: 100px;
+            width: 496px;
+            font-size: 32pt;
+            letter-spacing: 5px;
+            font-weight:400;
+        }
+
+        footer {
+            display: flex;
+            display: -webkit-flex;
+            display: -moz-box;
+            display: -ms-flexbox;
+            flex-flow: row wrap;
+            padding: 50px;
+            color: #fff;
+            background-color:#011c39;
+        }
+
+        .footer > *{
+            flex: 1 100%;
+        }
+
+        .footer-left {
+            margin-right: 1.25em;
+            margin-bottom: 2em;
+        }
+
+      .footer-left p {
+          padding-right: 20%;
+          color: #999;
+      }
+
+      .socials a {
+          width: 8em;
+          height:8em;
+          display: inline-block;
+          margin-right: 80px;
+      }
+
+        .socials a i {
+            color: #e7f2f4;
+            padding: 10px 12px;
+            font-size: 7.90em;
+        }
+
+        @media screen and (min-width: 600px) {
+            .footer-left {
+                flex: 1 0px;
+            }
+        }
+
+        @media (max-width: 600px) {
+            .footer {
+                padding: 15px;
+            }
+        }
+    
