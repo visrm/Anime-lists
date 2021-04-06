@@ -132,3 +132,20 @@ function ins() {
 
     /* crap */
 }
+
+class Editlist {
+    constructor(name, action) {
+        this.name = name;
+        this.action = action;
+    }
+}
+
+async function addToList(name) {
+    const add = await new Editlist.action;
+    console.log(`${name} was successfully added to the List`)
+}
+
+async function removeToList(name) {
+    const remove = await new Editlist.action;
+    console.log(`${name} was successfully removed to the List`)
+}
