@@ -3,4 +3,4 @@ This is a pre-mature anime listing webpage being made , side-by-side with studie
 
 # Contribution
 Free for all , for contributing to the repo with regardance with 
-#CONTRIBUTION
+<a color="#fff" href="CONTRIBUTION.md">Code of Conduct</a>
