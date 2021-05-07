@@ -15,7 +15,6 @@
     <link rel="stylesheet" type="text/css"
         href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" />
     <link rel="stylesheet" type="text/css" href="style.css" />
-
 </head>
 
 <body>
@@ -23,10 +22,10 @@
         <!--Parallax Moon Scrolling Effect-->
         <section>
             <!--Images for the Parallax moon scrolling effect-->
-            <img src="/img src/bg.jpg" id="bg">
-            <img src="/img src/moon.png" id="moon">
-            <img src="/img src/mountain.png" id="mountain">
-            <img src="/img src/road.png" id="road">
+            <img src="/img src/bg.jpg" id="bg" />
+            <img src="/img src/moon.png" id="moon" />
+            <img src="/img src/mountain.png" id="mountain" />
+            <img src="/img src/road.png" id="road" />
             <!-- emerging text-->
             <h1 id="text">Anime Lists</h1>
         </section>
@@ -39,15 +38,15 @@
             let text = document.getElementById("text");
 
             //Eventlistener assigned for scrolling
-            window.addEventListener('scroll', function () {
+            window.addEventListener("scroll", function () {
                 // variable "value" assigned for Scroll attribute of HTML based on Y axes
                 var value = window.scrollY;
                 // variation of position of imgs , as scrolled
-                bg.style.top = value * 0.5 + 'px';
-                moon.style.left = value * 0.5 + 'px';
-                mountain.style.top = value * 0.15 + 'px';
-                road.style.top = value * 0.15 + 'px';
-                text.style.top = value * 1 + 'px';
+                bg.style.top = value * 0.5 + "px";
+                moon.style.left = value * 0.5 + "px";
+                mountain.style.top = value * 0.15 + "px";
+                road.style.top = value * 0.15 + "px";
+                text.style.top = value * 1 + "px";
             });
         </script>
         <br />
@@ -56,30 +55,40 @@
                 <h1>Anime Lister :</h1>
                 <p>Personal listing site</p>
             </hgroup>
+            <div>
+                <span> <span>Menu</span><span>Menu</span><span>Menu</span> </span>
+            </div>
         </nav>
     </header>
 
     <!--The list-->
     <ul id="Anilist" type="square">
-        <div class="anilist" id="0-9">0-9
+        <div class="anilist" id="0-9">
+            0-9
             <ol>
                 <li><b>3D Girlfriend</b>--<em>3d-Kanojo</em></li>
             </ol>
         </div>
-        <div class="anilist" id="A">A
+        <div class="anilist" id="A">
+            A
             <ol>
-                <li><b>A Certain scientific ....</b>--<em>Toaru kagaku no ....</em><sub>[4]</sub></li>
+                <li>
+                    <b>A Certain scientific ....</b>--<em>Toaru kagaku no ....</em><sub>[4]</sub>
+                </li>
                 <li><b>Absolute duo</b>--<em>absolute duo</em></li>
                 <li><b>Ace of Diamomd</b>--<em>Diamond no ace</em></li>
                 <li><em>Ahiru no sora</em></li>
                 <li><b>Akame ga kill</b></li>
                 <li><b>Amnesia</b>--<em>Amnesia</em></li>
                 <li><b>Angels of Death</b>--<em>Satsuriku no tenshi</em></li>
-                <li><b>Assassination Classroom</b>--<em>Ansatsu no kyoushitsu</em></li>
+                <li>
+                    <b>Assassination Classroom</b>--<em>Ansatsu no kyoushitsu</em>
+                </li>
                 <li><b>Attack On Titans</b>--<em>Shingeki no kyoujin</em></li>
             </ol>
         </div>
-        <div class="anilist" id="B">B
+        <div class="anilist" id="B">
+            B
             <ol>
                 <li><b>Baby Steps</b></li>
                 <li><b>Bakuman</b></li>
@@ -93,24 +102,32 @@
                 <li><b>Blood lad</b></li>
                 <li><b>Blue Exorcist</b>--<em>Ao no Exorcist</em></li>
                 <li><b>Blue Spring ride</b>--<em>Ao haru ride</em></li>
-                <li><b>Boarding school Juliet</b>--<em>Kishuku gakou no juliet</em></li>
+                <li>
+                    <b>Boarding school Juliet</b>--<em>Kishuku gakou no juliet</em>
+                </li>
                 <li><b>Boruto</b>--<em>Boruto:Naruto next generation</em></li>
                 <li><b>Btooom!</b></li>
                 <li><b>Bungou stray dogs</b></li>
                 <li><em>Busou Shoujo machiavillianism</em></li>
             </ol>
         </div>
-        <div class="anilist" id="C">C
+        <div class="anilist" id="C">
+            C
             <ol>
                 <li><b>Charlotte</b></li>
                 <li><em>Chihayafuru</em></li>
                 <li><b>Classroom of the Elites</b>--<em>Kyoushitsu</em></li>
-                <li><b>Clean freak Aoyama-kun</b>--<em>Keppeki danshi! Aoyama-kun</em></li>
+                <li>
+                    <b>Clean freak Aoyama-kun</b>--<em>Keppeki danshi! Aoyama-kun</em>
+                </li>
                 <li><b>Code:Breaker</b></li>
-                <li><b>Cross Ange: Rondo of Angels and Dragon</b><em>Cross Ange: Tenshi to Ryuu no Rondo</em></li>
+                <li>
+                    <b>Cross Ange: Rondo of Angels and Dragon</b><em>Cross Ange: Tenshi to Ryuu no Rondo</em>
+                </li>
             </ol>
         </div>
-        <div class="anilist" id="D">D
+        <div class="anilist" id="D">
+            D
             <ol>
                 <li><b>Darling in the franxx</b></li>
                 <li><em>Darwin's game</em></li>
@@ -125,15 +142,19 @@
                 <li><em>Dororo</em></li>
                 <li><b>Dr.Stone</b></li>
                 <li><b>Durarara!</b></li>
-                <li><b>Dusk maiden of Amnesia</b>--<em>Tasogare OtomeXAmnesia</em></li>
+                <li>
+                    <b>Dusk maiden of Amnesia</b>--<em>Tasogare OtomeXAmnesia</em>
+                </li>
             </ol>
         </div>
-        <div class="anilist" id="E">E
+        <div class="anilist" id="E">
+            E
             <ol>
                 <li><b>Evil or Live</b></li>
             </ol>
         </div>
-        <div class="anilist" id="F">F
+        <div class="anilist" id="F">
+            F
             <ol>
                 <li><b>Fairy tail</b>--<em>Fairy tail</em></li>
                 <li><b>False Love</b>--<em>Nisekoi</em></li>
@@ -143,7 +164,8 @@
                 <li><b>Fuuka</b></li>
             </ol>
         </div>
-        <div class="anilist" id="G">G
+        <div class="anilist" id="G">
+            G
             <ol>
                 <li><b>Gamers!</b></li>
                 <li><b>Gangsta</b></li>
@@ -153,7 +175,8 @@
                 <li><b>Grand Blue</b></li>
             </ol>
         </div>
-        <div class="anilist" id="H">H
+        <div class="anilist" id="H">
+            H
             <ol>
                 <li><em>Haikyuu!!</em></li>
                 <li><em>Hajime no ippo</em></li>
@@ -166,16 +189,20 @@
                 <li><b>Hyouka</b></li>
             </ol>
         </div>
-        <div class="anilist" id="I">I
+        <div class="anilist" id="I">
+            I
             <ol>
                 <li><b>inazuma eleven</b></li>
                 <li><b>Infinity Stratos</b>--<em>(IS)</em></li>
                 <li><b>InuXboku SS</b></li>
-                <li><b>Is it wrong to try to pick up girls in the dungeon?</b>--<em>Danmachi</em></li>
+                <li>
+                    <b>Is it wrong to try to pick up girls in the dungeon?</b>--<em>Danmachi</em>
+                </li>
                 <li><em>Isekai wa Smartphone to tomoni</em></li>
             </ol>
         </div>
-        <div class="anilist" id="J">J
+        <div class="anilist" id="J">
+            J
             <ol>
                 <li><em>Jujutsu Kaisen</em></li>
             </ol>
@@ -187,22 +214,28 @@
             <<- Updates ->>
         </legend>
         <label>
-            Anime name : <input name="Anime_name" type="text" placeholder="Enter  anime  name" id="Anime" maxlength="80"
-                size="60" class="inp" />
+            Anime name :
+            <input name="Anime_name" type="text" placeholder="Enter  anime  name" id="Anime" maxlength="80" size="60"
+                class="inp" />
         </label>
         <br />
         <br />
         <label>
-            Alternate name : <input name="Alt_name" type="text" placeholder="Enter  alternate  name" id="Alt"
-                maxlength="70" size="60" class="inp" />
+            Alternate name :
+            <input name="Alt_name" type="text" placeholder="Enter  alternate  name" id="Alt" maxlength="70" size="60"
+                class="inp" />
         </label>
         <br />
         <br />
     </fieldset>
     <!--A Hoverable <insert> and <remove> buttons-->
     <div class="hoverBt">
-        <button type="submit" name="Insertitem" value="inserted" class="Bt" id="insli">Insert</button>
-        <button type="submit" name="Removeitem" value="removed" class="Bt" id="remli">Remove</button>
+        <button type="submit" name="Insertitem" value="inserted" class="Bt" id="insli">
+            Insert
+        </button>
+        <button type="submit" name="Removeitem" value="removed" class="Bt" id="remli">
+            Remove
+        </button>
     </div>
 
     <a href="next.html" id="page">Next</a>
@@ -212,20 +245,20 @@
         <div class="footer-left">
             <div class="socials">
                 <p>Socials</p>
-                <li><b>Facebook :</b></li><a href="https://www.facebook.com/rahulr.rohit.3"><i
-                        class="fa fa-facebook"></i></a>
-                <li><b>Twitter :</b></li><a href="https://twitter.com/rahulm4286"><i class="fa fa-twitter"></i></a>
-                <li><b>Instagram :</b></li><a href="https://www.instagram.com/crescent_.rahul/"><i
-                        class="fa fa-instagram"></i></a>
-                <li><b>Github :</b></li><a href="https://github.com/Yvel-tal42-86"><i class="fa fa-github"></i></a>
-                <li><b>Discord :</b> Vyali#6871</p>
+                <li><b>Facebook :</b></li>
+                <a href="https://www.facebook.com/rahulr.rohit.3"><i class="fa fa-facebook"></i></a>
+                <li><b>Twitter :</b></li>
+                <a href="https://twitter.com/rahulm4286"><i class="fa fa-twitter"></i></a>
+                <li><b>Instagram :</b></li>
+                <a href="https://www.instagram.com/crescent_.rahul/"><i class="fa fa-instagram"></i></a>
+                <li><b>Github :</b></li>
+                <a href="https://github.com/Yvel-tal42-86"><i class="fa fa-github"></i></a>
             </div>
         </div>
         <ul class="footer-right">
             <!--Future scopes-->
         </ul>
     </footer>
-
 </body>
 
 </html>
