@@ -85,7 +85,7 @@ section img {
 }
 
 a#page {
-  display: inline-flex;
+  display: flex;
   color: rgb(37, 215, 215);
   text-decoration: underline;
   font-size: 59pt;
@@ -93,7 +93,7 @@ a#page {
 }
 
 a#page:hover {
-  display: inline-flex;
+  display: flex;
   color: rgb(28, 225, 205);
   text-decoration: underline;
   font-size: 60pt;
@@ -101,6 +101,7 @@ a#page:hover {
 }
 
 ul {
+  display: list-item;
   margin-top: 25px;
   margin-left: 75px;
   margin-bottom: 25px;
@@ -242,15 +243,6 @@ footer {
 }
 
 .socials a:hover {
-  width: 6.5em;
-  height: 6.5em;
-  margin-left: 8.15em;
-  display: inline-block;
-  margin-right: 80px;
-  border-radius: 60px 60px 60px 60px;
-  -moz-border-radius: 60px 60px 60px 60px;
-  -webkit-border-radius: 60px 60px 60px 60px;
-  border-style: outset;
   box-shadow: 10px 10px 10.5px #064d80;
   -moz-box-shadow: 10px 10px 10.5px #064d80;
   -webkit-box-shadow: 10px 10px 10.5px #064d80;
