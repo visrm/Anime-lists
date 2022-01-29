@@ -103,7 +103,8 @@ a#page:hover {
 ul {
   display: list-item;
   margin-top: 25px;
-  margin-left: 75px;
+  margin-left: 33px;
+  margin-right: 10px;
   margin-bottom: 25px;
   padding: 5px;
   color: #fff;
@@ -119,7 +120,7 @@ ol > li {
   text-transform: capitalize;
   padding: 5px;
   margin-left: 120px;
-  font-size: 75%;
+  font-size: 65%;
   font-weight: 250;
   font-stretch: expanded;
   line-height: 73px;
