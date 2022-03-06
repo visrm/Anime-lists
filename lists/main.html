@@ -1,247 +1,428 @@
 <!DOCTYPE html>
 <html dir="ltr" , lang="en">
-
-<head>
+  <head>
     <title>Anime_list</title>
 
     <!--The meta data about the page-->
     <meta name="description" content="My Anime list" />
-    <meta name="keyword" content="anime names, alternative name, personal watched list" />
+    <meta
+      name="keyword"
+      content="anime names, alternative name, personal watched list"
+    />
     <meta name="robots" content="nofollow" />
     <meta http-equiv="author" content="Vismr" />
     <meta http-equiv="pragma" content="no-cache" />
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
     <!--external stylesheet-->
-    <link rel="stylesheet" type="text/css"
-        href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
     <link rel="stylesheet" type="text/css" href="style.css" />
-</head>
+  </head>
 
-<body>
+  <body>
     <header>
-        <!--Parallax Moon Scrolling Effect-->
-        <section>
-            <!--Images for the Parallax moon scrolling effect-->
-            <img src="/img src/bg.jpg" id="bg" />
-            <img src="/img src/moon.png" id="moon" />
-            <img src="/img src/mountain.png" id="mountain" />
-            <img src="/img src/road.png" id="road" />
-            <!-- emerging text-->
-            <h1 id="text">Anime Lists</h1>
-        </section>
+      <!--Parallax Moon Scrolling Effect-->
+      <section>
+        <!--Images for the Parallax moon scrolling effect-->
+        <img src="/img_src/bg.jpg" id="bg" />
+        <img src="/img_src/moon.png" id="moon" />
+        <img src="/img_src/mountain.png" id="mountain" />
+        <img src="/img_src/road.png" id="road" />
+        <!-- emerging text-->
+        <h1 id="text">Anime Lists</h1>
+      </section>
 
-        <script type="text/javascript">
-            let bg = document.getElementById("bg");
-            let moon = document.getElementById("moon");
-            let mountain = document.getElementById("mountain");
-            let road = document.getElementById("road");
-            let text = document.getElementById("text");
+      <script type="text/javascript">
+        let bg = document.getElementById("bg");
+        let moon = document.getElementById("moon");
+        let mountain = document.getElementById("mountain");
+        let road = document.getElementById("road");
+        let text = document.getElementById("text");
 
-            //Eventlistener assigned for scrolling
-            window.addEventListener("scroll", function () {
-                // variable "value" assigned for Scroll attribute of HTML based on Y axes
-                var value = window.scrollY;
-                // variation of position of imgs , as scrolled
-                bg.style.top = value * 0.5 + "px";
-                moon.style.left = value * 0.5 + "px";
-                mountain.style.top = value * 0.15 + "px";
-                road.style.top = value * 0.15 + "px";
-                text.style.top = value * 1 + "px";
-            });
-        </script>
-        <br />
-        <nav id="nav">
-            <hgroup>
-                <h1>Anime Lister :</h1>
-                <p>Personal listing site</p>
-            </hgroup>
-            <div>
-                <span> <span>Menu</span><span>Menu</span><span>Menu</span> </span>
-            </div>
-        </nav>
+        //Eventlistener assigned for scrolling
+        window.addEventListener("scroll", function () {
+          // variable "value" assigned for Scroll attribute of HTML based on Y axes
+          var value = window.scrollY;
+          // variation of position of imgs , as scrolled
+          bg.style.top = value * 0.5 + "px";
+          moon.style.left = value * 0.5 + "px";
+          mountain.style.top = value * 0.15 + "px";
+          road.style.top = value * 0.15 + "px";
+          text.style.top = value * 1 + "px";
+        });
+      </script>
+      <br />
+      <nav id="nav">
+        <hgroup>
+          <h1>Anime Lister :</h1>
+          <p>Personal listing site</p>
+        </hgroup>
+        <div>
+          <span> <span>Menu</span><span>Menu</span><span>Menu</span> </span>
+        </div>
+      </nav>
     </header>
 
     <!--The list-->
     <ul id="Anilist" type="square">
-        <div class="anilist" id="0-9">
-            0-9
-            <ol>
-                <li><b>3D Girlfriend</b>--<em>3d-Kanojo</em></li>
-            </ol>
-        </div>
-        <div class="anilist" id="A">
-            A
-            <ol>
-                <li>
-                    <b>A Certain scientific ....</b>--<em>Toaru kagaku no ....</em><sub>[4]</sub>
-                </li>
-                <li><b>Absolute duo</b>--<em>absolute duo</em></li>
-                <li><b>Ace of Diamomd</b>--<em>Diamond no ace</em></li>
-                <li><em>Ahiru no sora</em></li>
-                <li><b>Akame ga kill</b></li>
-                <li><b>Amnesia</b>--<em>Amnesia</em></li>
-                <li><b>Angels of Death</b>--<em>Satsuriku no tenshi</em></li>
-                <li>
-                    <b>Assassination Classroom</b>--<em>Ansatsu no kyoushitsu</em>
-                </li>
-                <li><b>Attack On Titans</b>--<em>Shingeki no kyoujin</em></li>
-            </ol>
-        </div>
-        <div class="anilist" id="B">
-            B
-            <ol>
-                <li><b>Baby Steps</b></li>
-                <li><b>Bakuman</b></li>
-                <li><em>Ballroom e youkoushou</em></li>
-                <li><b>Beelzebub</b>--<em>Beelzebub</em></li>
-                <li><b>Beyblade</b>--<em>Beyblade</em></li>
-                <li><b>Black Bullet</b></li>
-                <li><b>Black Butler</b>--<em>Kuroshijitsu</em></li>
-                <li><b>Black Clover</b>--<em>Black Clover</em></li>
-                <li><b>Blast of tempest</b>--<em>Zetsuen no tempest</em></li>
-                <li><b>Blood lad</b></li>
-                <li><b>Blue Exorcist</b>--<em>Ao no Exorcist</em></li>
-                <li><b>Blue Spring ride</b>--<em>Ao haru ride</em></li>
-                <li>
-                    <b>Boarding school Juliet</b>--<em>Kishuku gakou no juliet</em>
-                </li>
-                <li><b>Boruto</b>--<em>Boruto:Naruto next generation</em></li>
-                <li><b>Btooom!</b></li>
-                <li><b>Bungou stray dogs</b></li>
-                <li><em>Busou Shoujo machiavillianism</em></li>
-            </ol>
-        </div>
-        <div class="anilist" id="C">
-            C
-            <ol>
-                <li><b>Charlotte</b></li>
-                <li><em>Chihayafuru</em></li>
-                <li><b>Classroom of the Elites</b>--<em>Kyoushitsu</em></li>
-                <li>
-                    <b>Clean freak Aoyama-kun</b>--<em>Keppeki danshi! Aoyama-kun</em>
-                </li>
-                <li><b>Code:Breaker</b></li>
-                <li>
-                    <b>Cross Ange: Rondo of Angels and Dragon</b><em>Cross Ange: Tenshi to Ryuu no Rondo</em>
-                </li>
-            </ol>
-        </div>
-        <div class="anilist" id="D">
-            D
-            <ol>
-                <li><b>Darling in the franxx</b></li>
-                <li><em>Darwin's game</em></li>
-                <li><b>Days</b></li>
-                <li><b>Deadman Wonderland</b></li>
-                <li><b>Deathnote</b>--<em>hon</em></li>
-                <li><b>Demon King Daimou</b>--<em>Daimaou</em></li>
-                <li><b>Demon Slayer</b>--<em>Kimetsu no Yaiba</em></li>
-                <li><b>Devil is a part-timer!</b>--<em>Hataraku Maousama!</em></li>
-                <li><b>Devilman Crybaby</b></li>
-                <li><b>Domestic Girlfriend</b>--<em>Domestic no kanojo</em></li>
-                <li><em>Dororo</em></li>
-                <li><b>Dr.Stone</b></li>
-                <li><b>Durarara!</b></li>
-                <li>
-                    <b>Dusk maiden of Amnesia</b>--<em>Tasogare OtomeXAmnesia</em>
-                </li>
-            </ol>
-        </div>
-        <div class="anilist" id="E">
-            E
-            <ol>
-                <li><b>Evil or Live</b></li>
-            </ol>
-        </div>
-        <div class="anilist" id="F">
-            F
-            <ol>
-                <li><b>Fairy tail</b>--<em>Fairy tail</em></li>
-                <li><b>False Love</b>--<em>Nisekoi</em></li>
-                <li><b>Food Wars</b>--<em>Shokugeki no souma</em></li>
-                <li><b>Free!</b></li>
-                <li><b>Future Diary</b>--<em>Mirai nikki</em></li>
-                <li><b>Fuuka</b></li>
-            </ol>
-        </div>
-        <div class="anilist" id="G">
-            G
-            <ol>
-                <li><b>Gamers!</b></li>
-                <li><b>Gangsta</b></li>
-                <li><b>Girly Air Force</b></li>
-                <li><b>Gleipnir</b></li>
-                <li><b>Goblin Slayer</b></li>
-                <li><b>Grand Blue</b></li>
-            </ol>
-        </div>
-        <div class="anilist" id="H">
-            H
-            <ol>
-                <li><em>Haikyuu!!</em></li>
-                <li><em>Hajime no ippo</em></li>
-                <li><b>Hamatora:The animation</b></li>
-                <li><em>Haruta to chika wa seishun suru</em></li>
-                <li><em>Hinomura zumuso</em></li>
-                <li><b>Horimiya</b>--<em>Hori san to Miyamura kun</em></li>
-                <li><b>Hundred</b></li>
-                <li><b>Hunter X Hunter</b></li>
-                <li><b>Hyouka</b></li>
-            </ol>
-        </div>
-        <div class="anilist" id="I">
-            I
-            <ol>
-                <li><b>inazuma eleven</b></li>
-                <li><b>Infinity Stratos</b>--<em>(IS)</em></li>
-                <li><b>InuXboku SS</b></li>
-                <li>
-                    <b>Is it wrong to try to pick up girls in the dungeon?</b>--<em>Danmachi</em>
-                </li>
-                <li><em>Isekai wa Smartphone to tomoni</em></li>
-            </ol>
-        </div>
-        <div class="anilist" id="J">
-            J
-            <ol>
-                <li><em>Jujutsu Kaisen</em></li>
-            </ol>
-        </div>
+      <div class="anilist" id="0-9">
+        0-9
+        <ol>
+          <li><b>12 kingdoms</b>--<em></em>Juuni kokuki</li>
+          <li><b>18If</b></li>
+          <li><b>3D Girlfriend</b>--<em>3d-Kanojo</em></li>
+          <li><b>86: Eighty six</b></li>
+        </ol>
+      </div>
+      <div class="anilist" id="A">
+        A
+        <ol>
+          <li>
+            <b>A Certain scientific ....</b>--<em>Toaru kagaku no ....</em
+            ><sub>[4]</sub>
+          </li>
+          <li><b>Absolute duo</b></li>
+          <li><b>Ace of Diamomd</b>--<em>Diamond no ace</em></li>
+          <li><b>Afro samurai</b></li>
+          <li><b>Ah! My godess</b></li>
+          <li><em>Ahiru no sora</em></li>
+          <li><b>Air gear</b></li>
+          <li><b>Akame ga kill</b></li>
+          <li>
+            <b>Akashic record of bastard magic instructor</b>--<em
+              >Rokudenashi majutsu koushi to akashic records</em
+            >
+          </li>
+          <li><b>Akiba's trip the animation</b></li>
+          <li>
+            <b>Alderamin on the sky</b>--<em
+              >nejimaki seirei senki: tsukyou no alderamin</em
+            >
+          </li>
+          <li><b>Amagami SS</b></li>
+          <li><b>Amnesia</b>--<em>Amnesia</em></li>
+          <li><b>Angels of Death</b>--<em>Satsuriku no tenshi</em></li>
+          <li>
+            <b>Angolmois:Record of mongol invasion</b>--<em
+              >Angolmois: Genkou kassen-ki</em
+            >
+          </li>
+          <li><b>Anonymous noise</b>--<em>fuukumenki noise</em></li>
+          <li>
+            <b>Anti-magic academy: The 35th test platoon</b>--<em
+              >Taimadou gakuen 35 shinken shoutai</em
+            >
+          </li>
+          <li><b>Arata: The legend</b>--<em>Arata kanagatari</em></li>
+          <li>
+            <b>Arifureta:From commonplace to the world's strongest</b>--<em
+              >Arifureta shokugyou de sekai saikyou</em
+            >
+          </li>
+          <li><b>Assassin's pride</b></li>
+          <li>
+            <b>Assassination Classroom</b>--<em>Ansatsu no kyoushitsu</em>
+          </li>
+          <li><b>Asura cryin'</b></li>
+          <li><b>Attack On Titans</b>--<em>Shingeki no kyoujin</em></li>
+        </ol>
+      </div>
+      <div class="anilist" id="B">
+        B
+        <ol>
+          <li><b>Baby Steps</b></li>
+          <li><b>BACCANO!</b></li>
+          <li><b>Bakuman</b></li>
+          <li><em>Ballroom e youkoushou</em></li>
+          <li><b>Barakamon</b></li>
+          <li><b>Beelzebub</b>--<em>Beelzebub</em></li>
+          <li><b>Berserk</b></li>
+          <li><b>Beyblade</b>--<em>Beyblade</em></li>
+          <li><b>Beyond the boundary</b>--<em>kyoukai no kanata</em></li>
+          <li><b>Big order</b></li>
+          <li><b>Black blood brothers</b></li>
+          <li><b>Black Bullet</b></li>
+          <li><b>Black Butler</b>--<em>Kuroshijitsu</em></li>
+          <li><b>Black Clover</b>--<em>Black Clover</em></li>
+          <li><b>Black cat</b></li>
+          <li><b>Black lagoon</b></li>
+          <li><b>Blade of the immortal</b>--<em>Mugen no juunin</em></li>
+          <li><b>Blast of tempest</b>--<em>Zetsuen no tempest</em></li>
+          <li><b>Blood+</b></li>
+          <li><b>Blood lad</b></li>
+          <li><b>Bloodivore</b></li>
+          <li><b>Blue Exorcist</b>--<em>Ao no Exorcist</em></li>
+          <li><b>Blue Spring ride</b>--<em>Ao haru ride</em></li>
+          <li>
+            <b>Boarding school Juliet</b>--<em>Kishuku gakou no juliet</em>
+          </li>
+          <li><b>Boruto</b>--<em>Boruto:Naruto next generation</em></li>
+          <li><b>Brynhildr in darkness</b>--<em>Gokukoku no brynhildr</em></li>
+          <li><b>Btooom!</b></li>
+          <li><b>Bungou stray dogs</b></li>
+          <li><em>Busou Shoujo machiavillianism</em></li>
+        </ol>
+      </div>
+      <div class="anilist" id="C">
+        C
+        <ol>
+          <li>
+            <b>C: the money of soul and possibility control</b>--<em
+              >Houshiram subatoya</em
+            >
+          </li>
+          <li><b>Campione!</b></li>
+          <li><b>Cardcaptor sakura</b></li>
+          <li><b>Case study of vanitas</b>--<em>Vanitas no carte</em></li>
+          <li>
+            <b>Castle town dandelion</b>--<em>Joukamachi no dandelion</em>
+          </li>
+          <li><b>Cat planet cuties</b></li>
+          <li><b>Chain chronicles</b></li>
+          <li><b>Chaika the coffin princess</b>--<em>Hitsugi no chaika</em></li>
+          <li><b>Charlotte</b></li>
+          <li><b>Cheating craft</b></li>
+          <li><em>Chihayafuru</em></li>
+          <li><b>Chobits</b></li>
+          <li><b>Chrome shelled regios</b></li>
+          <li><b>Chrono crusade</b></li>
+          <li><b>Conception</b></li>
+          <li><b>Classroom of the Elites</b>--<em>Kyoushitsu</em></li>
+          <li><b>Claymore</b></li>
+          <li>
+            <b>Clean freak Aoyama-kun</b>--<em>Keppeki danshi! Aoyama-kun</em>
+          </li>
+          <li><b>Code:Breaker</b></li>
+          <li><b>Code-E</b></li>
+          <li><b>Code Geass:Lelouch of the rebellion</b></li>
+          <li><b>Convenience store boyfriend</b>--<em>Konbini kareshi</em></li>
+          <li><b>Cowboy bepop</b></li>
+          <li>
+            <b>Cross Ange: Rondo of Angels and Dragon</b
+            ><em>Cross Ange: Tenshi to Ryuu no Rondo</em>
+          </li>
+        </ol>
+      </div>
+      <div class="anilist" id="D">
+        D
+        <ol>
+          <li><b>Dagashi kashi</b></li>
+          <li><b>Dance in the vampire bund</b></li>
+          <li>
+            <b>Danmachi: Is it wrong to try to pick up girls in the dungeon?</b>
+          </li>
+          <li><b>Darling in the franxx</b></li>
+          <li><em>Darwin's game</em></li>
+          <li><b>Days</b></li>
+          <li><b>Deadman Wonderland</b></li>
+          <li><b>Deathnote</b>--<em>hon</em></li>
+          <li><b>Deltora quest</b></li>
+          <li><b>Demon King Daimou</b>--<em>Daimaou</em></li>
+          <li><b>Demon Slayer</b>--<em>Kimetsu no Yaiba</em></li>
+          <li><b>Devil is a part-timer!</b>--<em>Hataraku Maousama!</em></li>
+          <li><b>Devil's line</b></li>
+          <li><b>Devilman Crybaby</b></li>
+          <li><b>Dies irae</b></li>
+          <li>
+            <b>DNA<sup>2</sup></b>
+          </li>
+          <li><b>Domestic Girlfriend</b>--<em>Domestic no kanojo</em></li>
+          <li><em>Dororo</em></li>
+          <li><b>Dr.Ramune-mysterious disease specialist</b></li>
+          <li><b>Dr.Stone</b></li>
+          <li><b>Draganronpa</b></li>
+          <li><b>Dramatical murder</b></li>
+          <li><b>Durarara!</b></li>
+          <li>
+            <b>Dusk maiden of Amnesia</b>--<em>Tasogare OtomeXAmnesia</em>
+          </li>
+        </ol>
+      </div>
+      <div class="anilist" id="E">
+        E
+        <ol>
+          <li><b>elDLIVE</b></li>
+          <li><b>Elemental gelade</b></li>
+          <li><b>Elfen lied</b></li>
+          <li><b>Ergo proxy</b></li>
+          <li><b>Evil or Live</b></li>
+        </ol>
+      </div>
+      <div class="anilist" id="F">
+        F
+        <ol>
+          <li><b>Fairy tail</b>--<em>Fairy tail</em></li>
+          <li><b>Food Wars</b>--<em>Shokugeki no souma</em></li>
+          <li><b>Free!</b></li>
+          <li><b>Fruits Basket</b></li>
+          <li><b>Full metal panic</b></li>
+          <li><b>Future Diary</b>--<em>Mirai nikki</em></li>
+          <li><b>Fuuka</b></li>
+        </ol>
+      </div>
+      <div class="anilist" id="G">
+        G
+        <ol>
+          <li><b>Gamers!</b></li>
+          <li><b>Gangsta</b></li>
+          <li><b>Garo: The animation</b></li>
+          <li><b>Ghost files</b>--<em>Yu yu hakushoku</em></li>
+          <li><b>Gin no guardian</b></li>
+          <li><b>Girly Air Force</b></li>
+          <li><b>Gleipnir</b></li>
+          <li><b>Goblin Slayer</b></li>
+          <li><b>Golden boy</b></li>
+          <li><b>Golden time</b></li>
+          <li><b>Gosick</b></li>
+          <li><b>Grancrest senki</b></li>
+          <li><b>Grand Blue</b></li>
+          <li><b>Green green</b></li>
+          <li>
+            <b>Grenadier: The senshi of smiles</b>---<em
+              >Grenadier: Hohoemi no senshi</em
+            >
+          </li>
+          <li><b>Guilty crown</b></li>
+        </ol>
+      </div>
+      <div class="anilist" id="H">
+        H
+        <ol>
+          <li><em>Hai to gensou no grimgar</em></li>
+          <li><em>Haikyuu!!</em></li>
+          <li><em>Hajime no ippo</em></li>
+          <li><b>Hajimete no gal</b></li>
+          <li><b>Hamatora:The animation</b></li>
+          <li><b>Handa-kun</b></li>
+          <li><b>Hanebado!- The badminton play of ayano hanesaki!</b></li>
+          <li><em>Haruta to chika wa seishun suru</em></li>
+          <li><b>Hatsukoi limited</b></li>
+          <li>
+            <b
+              >Higehiro: After being rejected, i shaved and took in a high
+              school runaway</b
+            >
+          </li>
+          <li><em>Hinomura zumuso</em></li>
+          <li><b>Hero's return</b></li>
+          <li><b>Heroic age</b></li>
+          <li><b>Horimiya</b>--<em>Hori san to Miyamura kun</em></li>
+          <li>
+            <b>Horizon in the middle of nowhere</b>--<em
+              >kyoukai senjou no horizon</em
+            >
+          </li>
+          <li>
+            <b>How a realist hero rebuilt a kingdom??</b>--<em
+              >genjitsu shuji yuusha no oukoku saikenki</em
+            >
+          </li>
+          <li><b>Hundred</b></li>
+          <li><b>Hunter X Hunter</b></li>
+          <li><b>Hyouka</b></li>
+        </ol>
+      </div>
+      <div class="anilist" id="I">
+        I
+        <ol>
+          <li><b>I'm standing on a million lives</b></li>
+          <li><b>inazuma eleven</b></li>
+          <li><b>Infinity Stratos</b>--<em>(IS)</em></li>
+          <li><b>InuXboku SS</b></li>
+          <li>
+            <b>Iroduku: The world in colours</b>--<em
+              >irodoku sekai no ashita kara</em
+            >
+          </li>
+          <li>
+            <b>Isekai cheat magician</b>--<em
+              >Yoiboshi no matsuri to majutsushi</em
+            >
+          </li>
+          <li><em>Isekai wa Smartphone to tomo ni</em></li>
+          <li><b>Island</b></li>
+          <li>
+            <b>It's disgusting to call this love</b>--<em
+              >koi to yobu ni wa kimochi warui</em
+            >
+          </li>
+        </ol>
+      </div>
+      <div class="anilist" id="J">
+        J
+        <ol>
+          <li>
+            <b>Jobless reincarnate</b>--<em
+              >Mushoku tensei: isekai ittara honki desu</em
+            >
+          </li>
+          <li><b>Jormungand</b></li>
+          <li><em>Jujutsu Kaisen</em></li>
+
+          <li><b>Juuni taisen</b></li>
+        </ol>
+      </div>
     </ul>
     <br />
     <fieldset id="new">
-        <legend>
-            <<- Updates ->>
-        </legend>
-        <label>
-            Anime name :
-            <input name="Anime_name" type="text" placeholder="Enter  anime  name" id="Anime" maxlength="80" size="60"
-                class="inp" />
-        </label>
-        <br />
-        <br />
-        <label>
-            Alternate name :
-            <input name="Alt_name" type="text" placeholder="Enter  alternate  name" id="Alt" maxlength="70" size="60"
-                class="inp" />
-        </label>
-        <br />
-        <br />
+      <legend><<- Updates ->></legend>
+      <label>
+        Anime name :
+        <input
+          name="Anime_name"
+          type="text"
+          placeholder="Enter  anime  name"
+          id="Anime"
+          maxlength="80"
+          size="60"
+          class="inp"
+        />
+      </label>
+      <br />
+      <br />
+      <label>
+        Alternate name :
+        <input
+          name="Alt_name"
+          type="text"
+          placeholder="Enter  alternate  name"
+          id="Alt"
+          maxlength="70"
+          size="60"
+          class="inp"
+        />
+      </label>
+      <br />
+      <br />
     </fieldset>
     <!--A Hoverable <insert> and <remove> buttons-->
     <div class="hoverBt">
-        <button type="submit" name="Insertitem" value="inserted" class="Bt" id="insli">
-            Insert
-        </button>
-        <button type="submit" name="Removeitem" value="removed" class="Bt" id="remli">
-            Remove
-        </button>
+      <button
+        type="submit"
+        name="Insertitem"
+        value="inserted"
+        class="Bt"
+        id="insli"
+      >
+        Insert
+      </button>
+      <button
+        type="submit"
+        name="Removeitem"
+        value="removed"
+        class="Bt"
+        id="remli"
+      >
+        Remove
+      </button>
     </div>
 
     <a href="next.html" id="page">Next</a><br/>
 
     <footer class="footer">
     </footer>
-</body>
-
+</body
 </html>
