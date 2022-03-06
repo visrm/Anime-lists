@@ -102,7 +102,8 @@ a#page:hover {
 
 ul {
   margin-top: 25px;
-  margin-left: 75px;
+  margin-left: 33px;
+  margin-right: 10px;
   margin-bottom: 25px;
   padding: 5px;
   color: #fff;
@@ -118,7 +119,7 @@ ol > li {
   text-transform: capitalize;
   padding: 5px;
   margin-left: 120px;
-  font-size: 75%;
+  font-size: 65%;
   font-weight: 250;
   font-stretch: expanded;
   line-height: 73px;
@@ -207,70 +208,9 @@ footer {
   flex: 1 100%;
 }
 
-.footer-left {
-  margin-right: 1.25em;
-  margin-bottom: 2em;
-}
-
-.footer-left p {
-  padding-right: 20%;
-  padding-bottom: 40px;
-  color: rgb(181, 181, 181);
-  font-size: 3.75em;
-}
-
-.footer-left li {
-  padding-right: 20%;
-  padding-bottom: 40px;
-  color: rgb(181, 181, 181);
-  font-size: 40pt;
-}
-
-.socials a {
-  width: 6.5em;
-  height: 6.5em;
-  margin-left: 8.15em;
-  display: inline-block;
-  margin-right: 80px;
-  border-radius: 60px 60px 60px 60px;
-  -moz-border-radius: 60px 60px 60px 60px;
-  -webkit-border-radius: 60px 60px 60px 60px;
-  border-style: outset;
-  box-shadow: 10px 10px #093554;
-  -moz-box-shadow: 10px 10px #093554;
-  -webkit-box-shadow: 10px 10px #093554;
-}
-
-.socials a:hover {
-  width: 6.5em;
-  height: 6.5em;
-  margin-left: 8.15em;
-  display: inline-block;
-  margin-right: 80px;
-  border-radius: 60px 60px 60px 60px;
-  -moz-border-radius: 60px 60px 60px 60px;
-  -webkit-border-radius: 60px 60px 60px 60px;
-  border-style: outset;
-  box-shadow: 10px 10px 10.5px #064d80;
-  -moz-box-shadow: 10px 10px 10.5px #064d80;
-  -webkit-box-shadow: 10px 10px 10.5px #064d80;
-  color: rgb(41, 128, 183);
-}
-
-.socials a i {
-  color: #e7f2f4;
-  padding: 10px 12px;
-  font-size: 5.8em;
-}
-
-@media screen and (min-width: 600px) {
-  .footer-left {
-    flex: 1 0px;
-  }
-}
-
 @media (max-width: 600px) {
   .footer {
     padding: 15px;
   }
 }
+
