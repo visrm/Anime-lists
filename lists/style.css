@@ -127,6 +127,14 @@ ol > li {
   text-align: justify;
 }
 
+ol > li:nth-child(odd) {
+  background-color: #333333;
+}
+
+ol > li:nth-child(even) { 
+  background-color: #222222;
+}
+
 #new {
   font-size: 40pt;
   font-stretch: expanded;
