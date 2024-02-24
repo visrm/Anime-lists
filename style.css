@@ -1,5 +1,12 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap");
 
+@media screen and (max-width: 600px) {
+  .footer {
+    padding: 15px;
+  }
+}
+
+
 * {
   margin: 0;
   padding: 0;
@@ -7,7 +14,6 @@
 
 body {
   background: #0a2a43;
-  width: 100vw;
   min-height: 100vh;
   height: 1200vh;
   font: 'Poppins', sans-serif;
@@ -23,7 +29,7 @@ body {
   top: 0;
   padding: 1.88em;
   height: 10.94em;
-  width: 100%;
+  width: 100vw;
   z-index: 100;
 }
 
@@ -89,7 +95,7 @@ section img {
   z-index: 2;
 }
 
-a#page {
+#page {
   display: flex;
   color: rgb(37, 215, 215);
   text-decoration: underline;
@@ -97,7 +103,7 @@ a#page {
   margin-left: 100px;
 }
 
-a#page:hover {
+#page:hover {
   display: flex;
   color: rgb(28, 225, 205);
   text-decoration: underline;
@@ -116,29 +122,28 @@ ul {
   color: #fff;
 }
 
-div.anilist {
+.anilist {
   font-size: 3.75em;
   font-weight: 600;
   margin-left: 100px;
-  width: 100%;
 }
 
-ol > li {
+ol>li {
   text-transform: capitalize;
   padding: 0.32em;
+  width: 100%;
   margin-left: 7.5em;
   font-size: 65%;
   font-weight: 250;
   font-stretch: expanded;
   line-height: 73px;
-  text-align: justify;
 }
 
-ol > li:nth-child(odd) {
+ol>li:nth-child(odd) {
   background-color: #333333;
 }
 
-ol > li:nth-child(even) { 
+ol>li:nth-child(even) { 
   background-color: #222222;
 }
 
@@ -162,7 +167,7 @@ input[placeholder] {
   text-align: center;
 }
 
-div.hoverBt {
+.hoverBt {
   margin-left: 150pt;
   margin-bottom: 40px;
 }
@@ -171,7 +176,7 @@ div.hoverBt {
   background-color: #a71766;
   color: #fff;
   height: 90px;
-  width: 75%;
+  width: 50%;
   font-size: 32pt;
   letter-spacing: 5px;
   font-weight: 400;
@@ -181,7 +186,7 @@ div.hoverBt {
   background-color: #a71766;
   color: #fff;
   height: 90px;
-  width: 75%;
+  width: 50%;
   font-size: 32pt;
   letter-spacing: 5px;
   font-weight: 400;
@@ -201,6 +206,7 @@ div.hoverBt {
 }
 
 footer {
+  width: 100vw;
   display: flex;
   display: -webkit-flex;
   display: -moz-box;
