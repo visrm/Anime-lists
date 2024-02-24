@@ -1,3 +1,5 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap");
+
 * {
   margin: 0;
   padding: 0;
@@ -5,8 +7,10 @@
 
 body {
   background: #0a2a43;
-  min-height: 150vh;
+  width: 100vw;
+  min-height: 100vh;
   height: 1200vh;
+  font: 'Poppins', sans-serif;
 }
 
 #nav {
@@ -108,6 +112,7 @@ ul {
   margin-right: 10px;
   margin-bottom: 25px;
   padding: 5px;
+  width: 100%;
   color: #fff;
 }
 
@@ -115,6 +120,7 @@ div.anilist {
   font-size: 3.75em;
   font-weight: 600;
   margin-left: 100px;
+  width: 100%;
 }
 
 ol > li {
@@ -165,7 +171,7 @@ div.hoverBt {
   background-color: #a71766;
   color: #fff;
   height: 90px;
-  width: 405px;
+  width: 75%;
   font-size: 32pt;
   letter-spacing: 5px;
   font-weight: 400;
@@ -175,7 +181,7 @@ div.hoverBt {
   background-color: #a71766;
   color: #fff;
   height: 90px;
-  width: 405px;
+  width: 75%;
   font-size: 32pt;
   letter-spacing: 5px;
   font-weight: 400;
@@ -184,22 +190,14 @@ div.hoverBt {
 
 #insli:hover {
   background-color: #e83497;
-  color: #fff;
   height: 5.9em;
-  width: 25em;
-  font-size: 32pt;
-  letter-spacing: 5px;
-  font-weight: 400;
+  width: 80%;
 }
 
 #remli:hover {
   background-color: #e83497;
-  color: #fff;
   height: 5.9em;
-  width: 25em;
-  font-size: 32pt;
-  letter-spacing: 5px;
-  font-weight: 400;
+  width: 80%;
 }
 
 footer {
@@ -217,10 +215,3 @@ footer {
 .footer > * {
   flex: 1 100%;
 }
-
-@media (max-width: 600px) {
-  .footer {
-    padding: 15px;
-  }
-}
-
