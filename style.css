@@ -1,5 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100..900;1,100..900&display=swap');
-
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100..900;1,100..900&display=swap");
 
 @media screen and (max-width: 600px) {
   .footer {
@@ -41,7 +40,7 @@ nav {
 
 hgroup {
   color: rgb(184, 224, 255);
-  font-size: 22pt;
+  font-size: 20pt;
 }
 
 section {
@@ -93,7 +92,7 @@ section img {
 #text {
   position: relative;
   color: #fff;
-  font-size: 100px;
+  font-size: 80pt;
   font-weight: 800;
   z-index: 1;
   mix-blend-mode: screen;
@@ -119,7 +118,7 @@ section img {
 ul {
   width: 80%;
   color: #fff;
-  padding: 1.75rem;
+  padding: 1.5rem;
   margin-left: 1rem;
   list-style: none;
 }
@@ -130,14 +129,14 @@ ul {
 }
 
 ol {
-  padding: 1rem;
+  padding: 0.5rem;
   font-size: 1rem;
   list-style: circle;
 }
 
 ol > li {
   text-transform: capitalize;
-  padding: 0.25rem;
+  padding: 0.15rem;
   margin-left: 6rem;
   max-width: 100%;
   font-weight: 100;
