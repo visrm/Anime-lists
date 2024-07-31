@@ -6,17 +6,16 @@
   }
 }
 
-
 * {
   margin: 0;
   padding: 0;
+  box-sizing: border-box;
 }
 
 body {
   background: #0a2a43;
   min-height: 100vh;
-  height: 1200vh;
-  font: 'Poppins', sans-serif;
+  font-family: "Poppins", sans-serif;
 }
 
 #nav {
@@ -27,20 +26,22 @@ body {
   position: -ms-sticky;
   position: -o-sticky;
   top: 0;
-  padding: 1.88em;
-  height: 10.94em;
-  width: 100vw;
+  left: 0;
+  padding: 1rem;
+  height: 8em;
+  width: 100%;
   z-index: 100;
 }
 
 hgroup {
   color: rgb(184, 224, 255);
-  font-size: 40pt;
+  font-size: 18pt;
 }
 
 section {
   position: relative;
   width: 100%;
+  max-width: 100%;
   height: 100vh;
   overflow: hidden;
   display: flex;
@@ -86,9 +87,10 @@ section img {
 #text {
   position: relative;
   color: #fff;
-  font-size: 11.75em;
-  font-weight: 700;
+  font-size: 100px;
+  font-weight: 800;
   z-index: 1;
+  mix-blend-mode: screen;
 }
 
 #road {
@@ -98,126 +100,48 @@ section img {
 #page {
   display: flex;
   color: rgb(37, 215, 215);
-  text-decoration: underline;
-  font-size: 59pt;
-  margin-left: 100px;
+  text-decoration: none;
+  font-size: 12pt;
+  padding: 1rem;
+  margin: 0.75rem, 1rem;
 }
 
 #page:hover {
-  display: flex;
   color: rgb(28, 225, 205);
-  text-decoration: underline;
-  font-size: 60pt;
-  margin-left: 100px;
 }
 
 ul {
-  display: list-item;
-  margin-top: 25px;
-  margin-left: 33px;
-  margin-right: 10px;
-  margin-bottom: 25px;
-  padding: 5px;
-  width: 100%;
+  width: 80%;
   color: #fff;
+  padding: 1.75rem;
+  margin-left: 1rem;
 }
 
 .anilist {
-  font-size: 3.75em;
+  font-size: 2em;
   font-weight: 600;
-  margin-left: 100px;
 }
 
-ol>li {
+ol {
+  padding: 1rem;
+  font-size: 20px;
+}
+
+ol > li {
   text-transform: capitalize;
-  padding: 0.32em;
-  width: 100%;
-  margin-left: 7.5em;
-  font-size: 65%;
-  font-weight: 250;
+  padding: 0.5rem;
+  margin-left: 6rem;
+  max-width: 100%;
+  font-weight: 100;
   font-stretch: expanded;
-  line-height: 73px;
-}
-
-ol>li:nth-child(odd) {
-  background-color: #333333;
-}
-
-ol>li:nth-child(even) { 
-  background-color: #222222;
-}
-
-#new {
-  font-size: 40pt;
-  font-stretch: expanded;
-  font-weight: 800;
-  margin-left: 100px;
-  margin-right: 75px;
-  margin-bottom: 50px;
-  padding: 18px;
-  list-style-position: outside;
-  color: #fff;
-}
-
-input[placeholder] {
-  background-color: rgb(204, 201, 255);
-  color: rgb(7, 5, 43);
-  margin-left: 12pt;
-  font-size: 45pt;
-  text-align: center;
-}
-
-.hoverBt {
-  margin-left: 150pt;
-  margin-bottom: 40px;
-}
-
-#insli {
-  background-color: #a71766;
-  color: #fff;
-  height: 90px;
-  width: 50%;
-  font-size: 32pt;
-  letter-spacing: 5px;
-  font-weight: 400;
-}
-
-#remli {
-  background-color: #a71766;
-  color: #fff;
-  height: 90px;
-  width: 50%;
-  font-size: 32pt;
-  letter-spacing: 5px;
-  font-weight: 400;
-  margin-left: 100px;
-}
-
-#insli:hover {
-  background-color: #e83497;
-  height: 5.9em;
-  width: 80%;
-}
-
-#remli:hover {
-  background-color: #e83497;
-  height: 5.9em;
-  width: 80%;
 }
 
 footer {
-  width: 100vw;
+  width: 100%;
   display: flex;
   display: -webkit-flex;
   display: -moz-box;
   display: -ms-flexbox;
   flex-flow: row wrap;
-  padding: 3.125em;
   color: #fff;
-  background-color: #011c39;
-  height: 96.875em;
-}
-
-.footer > * {
-  flex: 1 100%;
 }
