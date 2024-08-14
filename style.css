@@ -1,11 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100..900;1,100..900&display=swap");
 
-@media screen and (max-width: 600px) {
-  .footer {
-    padding: 2rem;
-  }
-}
-
 * {
   margin: 0;
   padding: 0;
@@ -17,7 +11,7 @@
   min-height: 100vh;
   font: 16pt "Poppins", sans-serif;
   line-height: 38px;
-  font-weight: 200;
+  font-weight: 100;
 }
 
 header {
@@ -91,8 +85,9 @@ section img {
 
 #text {
   position: relative;
-  color: #fff;
-  font-size: 80pt;
+  color: #ffffff;
+  font-size: 90pt;
+  font-family:Georgia, 'Times New Roman', Times, serif;
   font-weight: 800;
   z-index: 1;
   mix-blend-mode: screen;
@@ -141,14 +136,4 @@ ol > li {
   max-width: 100%;
   font-weight: 100;
   font-stretch: expanded;
-}
-
-footer {
-  width: 100%;
-  display: flex;
-  display: -webkit-flex;
-  display: -moz-box;
-  display: -ms-flexbox;
-  flex-flow: row wrap;
-  color: #fff;
 }
